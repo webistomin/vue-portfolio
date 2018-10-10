@@ -266,7 +266,7 @@
   }
 
     @media @screen-lg {
-    padding-bottom: 176px;
+    padding-bottom: 200px;
 
     &__column {
       &--padding {

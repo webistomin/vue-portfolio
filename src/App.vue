@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <page-header></page-header>
+    <home></home>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-  import PageHeader from './components/PageHeader';
+  import Home from './components/Home';
 
   export default {
     name: 'app',
     components: {
-      PageHeader,
+      Home,
     },
   };
 </script>
