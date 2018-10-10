@@ -3,6 +3,11 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+import './assets/fonts.less';
+import './assets/variables.less';
+import './assets/normalize.less';
+import './assets/scaffolding.less';
+import './assets/inputs.less';
 
 Vue.config.productionTip = false;
 
