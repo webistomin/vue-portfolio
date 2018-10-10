@@ -6,34 +6,33 @@
         <figure class="portfolio__figure">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/sport-desktop.webp 1x,
-                    ../../static/img/portfolio/sport-desktop@2x.webp 2x">
+                    srcset="../../static/img/portfolio/movie-desktop.webp 1x,
+                    ../../static/img/portfolio/movie-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/sport-tablet.webp 1x,
-                    ../../static/img/portfolio/sport-tablet@2x.webp 2x">
+                    srcset="../../static/img/portfolio/movie-tablet.webp 1x,
+                    ../../static/img/portfolio/movie-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/sport-mobile.webp 1x,
-                    ../../static/img/portfolio/sport-mobile@2x.webp 2x">
+                    srcset="../../static/img/portfolio/movie-mobile.webp 1x,
+                    ../../static/img/portfolio/movie-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/sport-desktop.jpg 1x,
-                    ../../static/img/portfolio/sport-desktop@2x.jpg 2x">
+                    srcset="../../static/img/portfolio/movie-desktop.jpg 1x,
+                    ../../static/img/portfolio/movie-desktop@2x.jpg 2x">
             <source media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/sport-tablet.jpg 1x,
-                    ../../static/img/portfolio/sport-tablet@2x.jpg 2x">
+                    srcset="../../static/img/portfolio/movie-tablet.jpg 1x,
+                    ../../static/img/portfolio/movie-tablet@2x.jpg 2x">
             <source media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/sport-mobile.jpg 1x,
-                    ../../static/img/portfolio/sport-mobile@2x.jpg 2x">
-            <img src="../../static/img/portfolio/sport-mobile.jpg"
-                 alt="Sport Store" class="portfolio__pic">
+                    srcset="../../static/img/portfolio/movie-mobile.jpg 1x,
+                    ../../static/img/portfolio/movie-mobile@2x.jpg 2x">
+            <img src="../../static/img/portfolio/movie-mobile.jpg"
+                 alt="Movie App" class="portfolio__pic">
           </picture>
-          <figcaption class="portfolio__caption portfolio__caption--white portfolio__caption--black">Project "Sport
-            Store"
+          <figcaption class="portfolio__caption portfolio__caption--white portfolio__caption--black">Project "Movie App"
           </figcaption>
         </figure>
         <div class="portfolio__buttons">
-          <a href="http://ishop.mcdir.ru/" class="portfolio__link btn" target="_blank"
+          <a href="https://vuejs-movie-app.firebaseapp.com/" class="portfolio__link btn" target="_blank"
              rel="noopener noreferrer">Live Demo</a>
-          <a href="https://github.com/webistomin/my-shop"
+          <a href="https://github.com/webistomin/vuejs-movie-app"
              class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
             View source</a>
         </div>
@@ -42,32 +41,32 @@
         <figure class="portfolio__figure">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/cat-desktop.webp 1x,
-                    ../../static/img/portfolio/cat-desktop@2x.webp 2x">
+                    srcset="../../static/img/portfolio/weather-desktop.webp 1x,
+                    ../../static/img/portfolio/weather-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/cat-tablet.webp 1x,
-                    ../../static/img/portfolio/cat-tablet@2x.webp 2x">
+                    srcset="../../static/img/portfolio/weather-tablet.webp 1x,
+                    ../../static/img/portfolio/weather-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/cat-mobile.webp 1x,
-                    ../../static/img/portfolio/cat-mobile@2x.webp 2x">
+                    srcset="../../static/img/portfolio/weather-mobile.webp 1x,
+                    ../../static/img/portfolio/weather-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/cat-desktop.jpg 1x,
-                    ../../static/img/portfolio/cat-desktop@2x.jpg 2x">
+                    srcset="../../static/img/portfolio/weather-desktop.jpg 1x,
+                    ../../static/img/portfolio/weather-desktop@2x.jpg 2x">
             <source media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/cat-tablet.jpg 1x,
-                    ../../static/img/portfolio/cat-tablet@2x.jpg 2x">
+                    srcset="../../static/img/portfolio/weather-tablet.jpg 1x,
+                    ../../static/img/portfolio/weather-tablet@2x.jpg 2x">
             <source media="(min-width: 320px)"
                     srcset="../../static/img/portfolio/cakes-mobile.jpg 1x,
-                    ../../static/img/portfolio/cat-mobile@2x.jpg 2x">
-            <img src="../../static/img/portfolio/cat-mobile.jpg" alt="Cat Energy" class="portfolio__pic">
+                    ../../static/img/portfolio/weather-mobile@2x.jpg 2x">
+            <img src="../../static/img/portfolio/weather-mobile.jpg" alt="Weather App" class="portfolio__pic">
           </picture>
-          <figcaption class="portfolio__caption portfolio__caption--white">Project "Cat Energy"</figcaption>
+          <figcaption class="portfolio__caption portfolio__caption--white">Project "Weather App"</figcaption>
         </figure>
         <div class="portfolio__buttons">
-          <a href="https://webistomin.github.io/cat-energy/"
+          <a href="https://vuejs-weather-app-32dde.firebaseapp.com/"
              class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
             Live Demo</a>
-          <a href="https://github.com/webistomin/cat-energy"
+          <a href="https://github.com/webistomin/vuejs-weather-app"
              class="portfolio__link btn" target="_blank"
              rel="noopener noreferrer">
             View source</a>
@@ -77,26 +76,26 @@
         <figure class="portfolio__figure">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/arbitration-desktop.webp 1x, ../../static/img/portfolio/arbitration-desktop@2x.webp 2x">
+                    srcset="../../static/img/portfolio/table-desktop.webp 1x, ../../static/img/portfolio/table-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/arbitration-tablet.webp 1x, ../../static/img/portfolio/arbitration-tablet@2x.webp 2x">
+                    srcset="../../static/img/portfolio/table-tablet.webp 1x, ../../static/img/portfolio/table-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/arbitration-mobile.webp 1x, ../../static/img/portfolio/arbitration-mobile@2x.webp 2x">
+                    srcset="../../static/img/portfolio/table-mobile.webp 1x, ../../static/img/portfolio/table-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/arbitration-desktop.jpg 1x, ../../static/img/portfolio/arbitration-desktop@2x.jpg 2x">
+                    srcset="../../static/img/portfolio/table-desktop.jpg 1x, ../../static/img/portfolio/table-desktop@2x.jpg 2x">
             <source media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/arbitration-tablet.jpg 1x, ../../static/img/portfolio/arbitration-tablet@2x.jpg 2x">
+                    srcset="../../static/img/portfolio/table-tablet.jpg 1x, ../../static/img/portfolio/table-tablet@2x.jpg 2x">
             <source media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/arbitration-mobile.jpg 1x, ../../static/img/portfolio/arbitration-mobile@2x.jpg 2x">
-            <img data-src="../../static/img/portfolio/arbitration-mobile.jpg" alt="Arbitration" class="portfolio__pic">
+                    srcset="../../static/img/portfolio/table-mobile.jpg 1x, ../../static/img/portfolio/table-mobile@2x.jpg 2x">
+            <img data-src="../../static/img/portfolio/table-mobile.jpg" alt="table" class="portfolio__pic">
           </picture>
-          <figcaption class="portfolio__caption portfolio__caption--white">Project "Arbitration"</figcaption>
+          <figcaption class="portfolio__caption portfolio__caption--white">Project "Table Component"</figcaption>
         </figure>
         <div class="portfolio__buttons">
-          <a href="https://webistomin.github.io/arbitration-adaptive/"
+          <a href="https://vuejs-table-component.firebaseapp.com/"
              class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
             Live Demo</a>
-          <a href="https://github.com/webistomin/arbitration-adaptive" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/webistomin/vuejs-table-component" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
             View source</a>
         </div>
       </li>
