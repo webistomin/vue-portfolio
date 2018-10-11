@@ -16,13 +16,34 @@ Vue.config.productionTip = false;
 
 const messages = {
   en: {
-    message: {
-      hello: 'Hello',
+    pageHeader: {
+      desc: 'Frontend developer',
     },
+    mainNav: {
+      firstLink: 'About me',
+      secondLink: 'Portfolio',
+      thirdLink: 'Contacts',
+    },
+    intro: {
+      title: 'Hello',
+      text: 'My name is Alexey, I\'m a junior frontend developer, currently focusing on Vue.js',
+      link: 'Hire me',
+    },
+    
   },
   ru: {
-    message: {
-      hello: 'Привет',
+    pageHeader: {
+      desc: 'Фронтенд разработчик',
+    },
+    mainNav: {
+      firstLink: 'Обо мне',
+      secondLink: 'Портфолио',
+      thirdLink: 'Контакты',
+    },
+    intro: {
+      title: 'Привет',
+      text: 'Меня зовут Алексей, я джуниор фронтенд разработчик. В настоящее время работаю с Vue.js',
+      link: 'Написать мне',
     },
   },
 };

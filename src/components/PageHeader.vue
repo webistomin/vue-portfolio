@@ -21,24 +21,27 @@
       </div>
       <div class="page-header__logotype">
         <h1 class="page-header__logo">Istomin.</h1>
-        <span class="page-header__desc">Frontend developer</span>
+        <span class="page-header__desc">{{ $t("pageHeader.desc") }}</span>
       </div>
-      <button class="page-header__toggle" type="button" tabindex="0">
+      <button class="page-header__toggle"
+              :class="{'page-header__toggle--opened' : isOpened}"
+              @click="openMenu" type="button" tabindex="0">
         Open menu
         <span class="page-header__line"></span>
         <span class="page-header__line"></span>
         <span class="page-header__line"></span>
       </button>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed"
+           :class="{'main-nav--opened' : isOpened}">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#about" class="main-nav__link">About me</a>
+            <a href="#about" class="main-nav__link">{{ $t("mainNav.firstLink") }}</a>
           </li>
           <li class="main-nav__item">
-            <a href="#portfolio" class="main-nav__link">Portfolio</a>
+            <a href="#portfolio" class="main-nav__link">{{ $t("mainNav.secondLink") }}</a>
           </li>
           <li class="main-nav__item">
-            <a href="#contacts" class="main-nav__link">Contacts</a>
+            <a href="#contacts" class="main-nav__link">{{ $t("mainNav.thirdLink") }}</a>
           </li>
         </ul>
       </nav>
@@ -85,7 +88,8 @@
     name: 'PageHeader',
     data() {
       return {
-        currentLocation: ['ru'],
+        currentLocation: [],
+        isOpened: false,
       };
     },
     components: {
@@ -97,6 +101,15 @@
         this.currentLocation = [];
         this.currentLocation.push(lang);
       },
+      openMenu() {
+        this.isOpened = !this.isOpened;
+      },
+    },
+    computed: {
+
+    },
+    mounted() {
+      this.currentLocation.push(this.$locale);
     },
   };
 </script>
@@ -169,6 +182,7 @@
       text-transform: uppercase;
       letter-spacing: 0.25em;
       color: #ffffff;
+      background-color: transparent;
 
       &--active {
         &::before {

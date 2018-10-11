@@ -3,16 +3,13 @@
     <div class="intro__column intro__column--margin">
       <figure class="intro__figure">
         <img src="../../static/img/me.jpg" alt="Alexey Istomin" class="intro__img" width="552" height="628">
-        <figcaption class="intro__caption">No pain no gain</figcaption>
+        <figcaption class="intro__caption">Love Vue.js, seriously!</figcaption>
       </figure>
     </div>
     <div class="intro__column intro__column--padding">
-      <h2 class="intro__title title">{{ $t("message.hello") }}</h2>
-      <p class="intro__text">
-        My name is Alexey, I'm a junior frontend developer. Ready to make your product better -
-        more interesting - the coolest.
-      </p>
-      <a href="#contacts" class="intro__link btn">Hire me</a>
+      <h2 class="intro__title title">{{ $t("intro.title") }}</h2>
+      <p class="intro__text">{{ $t("intro.text") }}</p>
+      <a href="#contacts" class="intro__link btn">{{ $t("intro.link") }}</a>
     </div>
   </section>
 </template>
