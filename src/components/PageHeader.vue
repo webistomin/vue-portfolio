@@ -2,13 +2,22 @@
   <header class="page-header">
     <div class="page-header__inner">
       <div class="page-header__links">
-        <a href="/ru/index.html"
+        <button
            class="page-header__link page-header__link--ru"
-           title="Russian version">RU</a>
+           :class="{'page-header__link--active': currentLocation.includes('ru')}"
+           title="Russian version"
+           @click="changeLocale('ru')"
+           >
+          RU
+        </button>
         /
-        <a href="javascript:void(0);"
-           class="page-header__link page-header__link--active page-header__link--en"
-           title="English version">EN</a>
+        <button
+           class="page-header__link page-header__link--en"
+           :class="{'page-header__link--active': currentLocation.includes('en')}"
+           title="English version"
+           @click="changeLocale('en')">
+          EN
+        </button>
       </div>
       <div class="page-header__logotype">
         <h1 class="page-header__logo">Istomin.</h1>
@@ -74,8 +83,20 @@
 
   export default {
     name: 'PageHeader',
+    data() {
+      return {
+        currentLocation: ['ru'],
+      };
+    },
     components: {
       Intro,
+    },
+    methods: {
+      changeLocale(lang) {
+        this.$locale = lang;
+        this.currentLocation = [];
+        this.currentLocation.push(lang);
+      },
     },
   };
 </script>
@@ -141,6 +162,7 @@
     }
 
     &__link {
+      border: none;
       position: relative;
       font-family: 'Oswald', sans-serif;
       font-size: 0.8125em;

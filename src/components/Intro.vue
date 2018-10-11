@@ -7,7 +7,7 @@
       </figure>
     </div>
     <div class="intro__column intro__column--padding">
-      <h2 class="intro__title title">Hello</h2>
+      <h2 class="intro__title title">{{ $t("message.hello") }}</h2>
       <p class="intro__text">
         My name is Alexey, I'm a junior frontend developer. Ready to make your product better -
         more interesting - the coolest.
