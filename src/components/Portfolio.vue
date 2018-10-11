@@ -56,7 +56,7 @@
                     srcset="../../static/img/portfolio/weather-tablet.jpg 1x,
                     ../../static/img/portfolio/weather-tablet@2x.jpg 2x">
             <source media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/cakes-mobile.jpg 1x,
+                    srcset="../../static/img/portfolio/brume-mobile.jpg 1x,
                     ../../static/img/portfolio/weather-mobile@2x.jpg 2x">
             <img src="../../static/img/portfolio/weather-mobile.jpg" alt="Weather App" class="portfolio__pic">
           </picture>
@@ -87,7 +87,7 @@
                     srcset="../../static/img/portfolio/table-tablet.jpg 1x, ../../static/img/portfolio/table-tablet@2x.jpg 2x">
             <source media="(min-width: 320px)"
                     srcset="../../static/img/portfolio/table-mobile.jpg 1x, ../../static/img/portfolio/table-mobile@2x.jpg 2x">
-            <img data-src="../../static/img/portfolio/table-mobile.jpg" alt="table" class="portfolio__pic">
+            <img data-src="../../static/img/portfolio/table-mobile.jpg" alt="Table component" class="portfolio__pic">
           </picture>
           <figcaption class="portfolio__caption portfolio__caption--white">Project "Table Component"</figcaption>
         </figure>
@@ -103,65 +103,65 @@
         <figure class="portfolio__figure">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/yes-desktop.webp 1x,
-                    ../../static/img/portfolio/yes-desktop@2x.webp 2x">
+                    srcset="../../static/img/portfolio/sport-desktop.webp 1x,
+                    ../../static/img/portfolio/sport-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/yes-tablet.webp 1x,
-                    ../../static/img/portfolio/yes-tablet@2x.webp 2x">
+                    srcset="../../static/img/portfolio/sport-tablet.webp 1x,
+                    ../../static/img/portfolio/sport-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/yes-mobile.webp 1x,
-                    ../../static/img/portfolio/yes-mobile@2x.webp 2x">
+                    srcset="../../static/img/portfolio/sport-mobile.webp 1x,
+                    ../../static/img/portfolio/sport-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/yes-desktop.jpg 1x,
-                    ../../static/img/portfolio/yes-desktop@2x.jpg 2x">
+                    srcset="../../static/img/portfolio/sport-desktop.jpg 1x,
+                    ../../static/img/portfolio/sport-desktop@2x.jpg 2x">
             <source media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/yes-tablet.jpg 1x,
-                    ../../static/img/portfolio/yes-tablet@2x.jpg 2x">
+                    srcset="../../static/img/portfolio/sport-tablet.jpg 1x,
+                    ../../static/img/portfolio/sport-tablet@2x.jpg 2x">
             <source media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/yes-mobile.jpg 1x,
-                    ../../static/img/portfolio/yes-mobile@2x.jpg 2x">
-            <img src="../../static/img/portfolio/yes-mobile.jpg" alt="Yes" class="portfolio__pic">
+                    srcset="../../static/img/portfolio/sport-mobile.jpg 1x,
+                    ../../static/img/portfolio/sport-mobile@2x.jpg 2x">
+            <img src="../../static/img/portfolio/sport-mobile.jpg" alt="sport" class="portfolio__pic">
           </picture>
-          <figcaption class="portfolio__caption portfolio__caption--white">Project "Yes"</figcaption>
+          <figcaption class="portfolio__caption portfolio__caption--white">Project "Sport store"</figcaption>
         </figure>
         <div class="portfolio__buttons">
-          <a href="https://webistomin.github.io/yes-adaptive/"
+          <a href="http://ishop.mcdir.ru/"
              class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
             Live Demo</a>
-          <a href="https://github.com/webistomin/yes-adaptive" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">View source</a>
+          <a href="https://github.com/webistomin/my-shop" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">View source</a>
         </div>
       </li>
       <li class="portfolio__item portfolio__item--margin" tabindex="0">
         <figure class="portfolio__figure">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/cakes-desktop.webp 1x,
-                    ../../static/img/portfolio/cakes-desktop@2x.webp 2x">
+                    srcset="../../static/img/portfolio/brume-desktop.webp 1x,
+                    ../../static/img/portfolio/brume-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/cakes-tablet.webp 1x,
-                    ../../static/img/portfolio/cakes-tablet@2x.webp 2x">
+                    srcset="../../static/img/portfolio/brume-tablet.webp 1x,
+                    ../../static/img/portfolio/brume-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/cakes-mobile.webp 1x,
-                    ../../static/img/portfolio/cakes-mobile@2x.webp 2x">
+                    srcset="../../static/img/portfolio/brume-mobile.webp 1x,
+                    ../../static/img/portfolio/brume-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/cakes-desktop.jpg 1x,
-                    ../../static/img/portfolio/cakes-desktop@2x.jpg 2x">
+                    srcset="../../static/img/portfolio/brume-desktop.jpg 1x,
+                    ../../static/img/portfolio/brume-desktop@2x.jpg 2x">
             <source media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/cakes-tablet.jpg 1x,
-                    ../../static/img/portfolio/cakes-tablet@2x.jpg 2x">
+                    srcset="../../static/img/portfolio/brume-tablet.jpg 1x,
+                    ../../static/img/portfolio/brume-tablet@2x.jpg 2x">
             <source media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/cakes-mobile.jpg 1x,
-                    ../../static/img/portfolio/cakes-mobile@2x.jpg 2x">
-            <img src="../../static/img/portfolio/cakes-mobile.jpg" alt="Cakes" class="portfolio__pic">
+                    srcset="../../static/img/portfolio/brume-mobile.jpg 1x,
+                    ../../static/img/portfolio/brume-mobile@2x.jpg 2x">
+            <img src="../../static/img/portfolio/brume-mobile.jpg" alt="brume" class="portfolio__pic">
           </picture>
-          <figcaption class="portfolio__caption portfolio__caption--white">Project "Pink"</figcaption>
+          <figcaption class="portfolio__caption portfolio__caption--white">Project "Brume"</figcaption>
         </figure>
         <div class="portfolio__buttons">
-          <a href="https://webistomin.github.io/cakes-adaptive/"
+          <a href="https://webistomin.github.io/brume-adaptive/"
              class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
             Live Demo
           </a>
-          <a href="https://github.com/webistomin/cakes-adaptive" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">View source</a>
+          <a href="https://github.com/webistomin/brume-adaptive" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">View source</a>
         </div>
       </li>
     </ul>
