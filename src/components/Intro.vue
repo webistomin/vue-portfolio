@@ -101,7 +101,8 @@
         z-index: -1;
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: #ffffff;
 
         &::before {
@@ -240,18 +241,21 @@
         -webkit-transform: translate(50%, -50%);
         transform: translate(50%, -50%);
       }
-      &:hover {
+      &:hover,
+      &:focus {
         color: #ffffff;
         background-color: transparent;
       }
-      &:hover:before {
+      &:hover::before,
+      &:focus::before{
         -webkit-animation: criss-cross-left 0.4s both;
         animation: criss-cross-left 0.6s both;
         -webkit-animation-direction: alternate;
         animation-direction: alternate;
         z-index: -1;
       }
-      &:hover:after {
+      &:hover::after,
+      &:focus::after {
         -webkit-animation: criss-cross-right 0.4s both;
         animation: criss-cross-right 0.6s both;
         -webkit-animation-direction: alternate;

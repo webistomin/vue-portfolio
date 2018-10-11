@@ -1,30 +1,26 @@
 <template>
-  <section class="about" id="about"><h3 class="about__title title">About me</h3>
-    <p class="about__text">I'm a positive and friendly person. Also, I love to set goals and achieve them. My
-      important qualities: self-motivated, ability overcome difficulties and the ability to learn. These skills help
-      me along the way:</p>
+  <section class="about" id="about"><h3 class="about__title title">{{ $t("about.title") }}</h3>
+    <p class="about__text">{{ $t("about.firstText") }}</p>
+    <p class="about__text">{{ $t("about.secondText") }}</p>
+    <p class="about__text">{{ $t("about.thirdText") }}</p>
     <ul class="about__list">
       <li class="about__item">HTML 5</li>
       <li class="about__item">CSS 3</li>
-      <li class="about__item">JavaScript (ES5, ES6)</li>
-      <li class="about__item">JQuery</li>
+      <li class="about__item">JavaScript (ES5, ES6+)</li>
+      <li class="about__item">Vue.js (Vuex, Vue Router, Vuetify)</li>
       <li class="about__item">LESS</li>
       <li class="about__item">Git</li>
-      <li class="about__item">Gulp</li>
+      <li class="about__item">Gulp, Webpack</li>
+      <li class="about__item">JQuery plugins</li>
       <li class="about__item">Cross-browser markup</li>
       <li class="about__item">BEM-like naming and code organization</li>
       <li class="about__item">Photoshop and Avocode</li>
     </ul>
-    <p class="about__text">I create crossbrowser responsive HTML page layouts and make it live using JavaScript.</p>
-    <p class="about__text">I can help you with converting website design to HTML templates, with developing frontend
-      for your project and with optimizing existing code.</p>
-    <p class="about__text">All the things: responsive, adaptive, mobile-first.</p>
-    <p class="about__text">By default support IE10+, Edge, and modern version of Chrome, Mozilla Firefox, Opera,
-      Safari.</p>
-    <p class="about__text">All that depends on me must works fast. Css-sprites, svg symbols, responsive images,
-      efficient code, optimization and minification. Clean markup reach 90+ on Google Tests.</p>
-    <p class="about__text">I have some backend programming experience and think as a backend programmer will think
-      when working with my code.</p> <h4 class="about__title about__title--small title">Education</h4>
+    <p class="about__text">{{ $t("about.fourthText") }}</p>
+    <p class="about__text">{{ $t("about.fifthText") }}</p>
+    <p class="about__text">{{ $t("about.sixthText") }}</p>
+    <p class="about__text">{{ $t("about.seventhText") }}</p>
+    <h4 class="about__title about__title--small title">Education</h4>
     <div class="about__desc">
       <div class="about__info">
         <span class="about__degree">Bachelor's degree with honors</span>

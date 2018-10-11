@@ -640,7 +640,8 @@
           background-color: @color-main;
           transform: rotate(45deg);
 
-          &:hover {
+          &:hover,
+          &:focus {
             -webkit-animation:rescale 0.25s ease;
             animation: rescale 0.25s ease;
           }
@@ -666,6 +667,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        outline-color: blue;
       }
 
       &__icon {

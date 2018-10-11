@@ -360,7 +360,8 @@
       transition-duration: 0.3s;
       transition-property: transform;
 
-      &:hover {
+      &:hover,
+      &:focus {
         transform: scale(1.1);
       }
 

@@ -271,7 +271,8 @@
         margin-top: 100px;
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         transform: scale(1.1);
       }
 
