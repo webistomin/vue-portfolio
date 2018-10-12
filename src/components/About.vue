@@ -47,7 +47,7 @@
   @import '../assets/btn';
 
   .about {
-    margin-top: 100px;
+    margin-top: 20px;
 
     &__title {
       text-align: center;
@@ -160,6 +160,8 @@
     }
 
     @media @screen-md {
+      margin-top: 40px;
+
       &__title {
         margin-bottom: 100px;
 

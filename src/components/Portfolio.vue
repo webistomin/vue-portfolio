@@ -180,7 +180,7 @@
   @import '../assets/btn';
 
   .portfolio {
-    margin-top: 100px;
+    margin-top: 20px;
 
     &__title {
       text-align: center;
@@ -289,6 +289,7 @@
 
     @media @screen-md {
       position: relative;
+      margin-top: 40px;
 
       &__figure {
         height: 100%;

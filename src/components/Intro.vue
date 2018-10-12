@@ -26,13 +26,20 @@
   @import '../assets/btn';
 
   .intro {
-    margin-top: 80px;
+    margin-top: 20px;
 
     &__figure {
       position: relative;
       margin: 0;
       margin-bottom: 20px;
       text-align: center;
+    }
+
+    &__column {
+      &--margin {
+        max-width: 300px;
+        margin: 0 auto;
+      }
     }
 
     &__img {
@@ -121,7 +128,7 @@
 
     @media @screen-md {
     display: flex;
-    padding-bottom: 146px;
+    padding-bottom: 125px;
     z-index: 2;
     position: relative;
 
@@ -129,7 +136,7 @@
       margin-left: 40px;
 
       &--margin {
-        margin-left: 80px;
+        margin-left: 150px;
         flex-shrink: 0;
       }
     }
@@ -270,15 +277,19 @@
     padding-bottom: 200px;
 
     &__column {
+      &--margin {
+        margin: 0;
+        margin-left: 125px;
+        max-width: 500px;
+      }
+
       &--padding {
         padding-top: 110px;
       }
     }
 
     &__title {
-      margin-bottom: 0;
-
-      padding-bottom: 10px;
+      margin-bottom: 0 !important;
     }
 
     &__text {
@@ -298,10 +309,6 @@
 
       &--margin {
         margin-left: 90px;
-      }
-
-      &--padding {
-        padding: 0;
       }
     }
 

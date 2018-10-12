@@ -1,5 +1,5 @@
 <template>
-  <footer class="page-footer">
+  <footer class="page-footer" role="contentinfo">
     <div class="container">
       <section class="contacts" id="contacts">
         <div class="contacts__column">
@@ -105,7 +105,7 @@
   @import '../assets/btn';
 
   .page-footer {
-    margin-top: 100px;
+    margin-top: 40px;
     background-color: #f1f2f4;
 
     @media @screen-md {
@@ -118,7 +118,7 @@
 
     &__title {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
 
       &--small {
         color: #ffffff;
@@ -392,6 +392,7 @@
 
     @media @screen-md {
       display: flex;
+      padding-top: 30px;
 
       &__title {
         margin-bottom: 20px;

@@ -1,7 +1,7 @@
 <template>
   <div>
     <page-header></page-header>
-    <main class="page-content">
+    <main class="page-content" role="main">
       <div class="container">
         <about></about>
         <portfolio></portfolio>

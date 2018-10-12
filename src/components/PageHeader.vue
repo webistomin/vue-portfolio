@@ -1,27 +1,27 @@
 <template>
-  <header class="page-header">
+  <header class="page-header" role="banner">
     <div class="page-header__inner">
       <div class="page-header__links">
         <button
-           class="page-header__link page-header__link--ru"
-           :class="{'page-header__link--active': currentLocation.includes('ru')}"
-           title="Russian version"
-           @click="changeLocale('ru')"
-           >
+          class="page-header__link page-header__link--ru"
+          :class="{'page-header__link--active': currentLocation.includes('ru')}"
+          title="Russian version"
+          @click="changeLocale('ru')"
+        >
           RU
         </button>
         /
         <button
-           class="page-header__link page-header__link--en"
-           :class="{'page-header__link--active': currentLocation.includes('en')}"
-           title="English version"
-           @click="changeLocale('en')">
+          class="page-header__link page-header__link--en"
+          :class="{'page-header__link--active': currentLocation.includes('en')}"
+          title="English version"
+          @click="changeLocale('en')">
           EN
         </button>
       </div>
       <div class="page-header__logotype">
         <h1 class="page-header__logo">Istomin.</h1>
-        <span class="page-header__desc">{{ $t("pageHeader.desc") }}</span>
+        <span class="page-header__desc">{{ $t('pageHeader.desc') }}</span>
       </div>
       <button class="page-header__toggle"
               :class="{'page-header__toggle--opened' : isOpened}"
@@ -32,16 +32,17 @@
         <span class="page-header__line"></span>
       </button>
       <nav class="main-nav main-nav--closed"
-           :class="{'main-nav--opened' : isOpened}">
+           :class="{'main-nav--opened' : isOpened}"
+           role="navigation">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#about" class="main-nav__link">{{ $t("mainNav.firstLink") }}</a>
+            <a href="#about" class="main-nav__link">{{ $t('mainNav.firstLink') }}</a>
           </li>
           <li class="main-nav__item">
-            <a href="#portfolio" class="main-nav__link">{{ $t("mainNav.secondLink") }}</a>
+            <a href="#portfolio" class="main-nav__link">{{ $t('mainNav.secondLink') }}</a>
           </li>
           <li class="main-nav__item">
-            <a href="#contacts" class="main-nav__link">{{ $t("mainNav.thirdLink") }}</a>
+            <a href="#contacts" class="main-nav__link">{{ $t('mainNav.thirdLink') }}</a>
           </li>
         </ul>
       </nav>
@@ -105,9 +106,7 @@
         this.isOpened = !this.isOpened;
       },
     },
-    computed: {
-
-    },
+    computed: {},
     mounted() {
       this.currentLocation.push(this.$locale);
     },
@@ -175,7 +174,9 @@
     }
 
     &__link {
+      outline: none;
       border: none;
+      padding: 0;
       position: relative;
       font-family: 'Oswald', sans-serif;
       font-size: 0.8125em;
@@ -225,6 +226,7 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
+      outline: none;
 
       &--opened .page-header__line {
         &:nth-child(1) {
@@ -271,7 +273,7 @@
       }
 
       &__link {
-        padding: 10px;
+        padding: 10px 0;
 
         &--projects {
           padding: 0 10px;
@@ -340,7 +342,7 @@
         display: flex;
         width: 70px;
         justify-content: space-between;
-        z-index: 1;
+        z-index: 3;
         position: absolute;
         bottom: -40px;
         font-size: 0;
@@ -418,7 +420,7 @@
 
   .main-nav {
     position: absolute;
-    top: 105%;
+    top: 62px;
     left: 0;
     z-index: 10;
     width: 100%;
@@ -457,7 +459,12 @@
       }
     }
 
+    @media @screen-sm {
+      top: 72px;
+    }
+
     @media @screen-md {
+
       &--closed {
         transform: none;
         transform-origin: initial;
@@ -592,32 +599,76 @@
         margin: 0;
       }
 
-      @-webkit-keyframes rescale{
-        0% {transform:rotate(0deg);}
-        10% {transform:rotate(36deg);}
-        20% {transform:rotate(72deg);}
-        30% {transform:rotate(108deg);}
-        40% {transform:rotate(144deg);}
-        50% {transform:rotate(180deg);}
-        60% {transform:rotate(216deg);}
-        70% {transform:rotate(252deg);}
-        80% {transform:rotate(288deg);}
-        90% {transform:rotate(334deg);}
-        100% {transform:rotate(360deg);}
+      @-webkit-keyframes rescale {
+        0% {
+          transform: rotate(0deg);
+        }
+        10% {
+          transform: rotate(36deg);
+        }
+        20% {
+          transform: rotate(72deg);
+        }
+        30% {
+          transform: rotate(108deg);
+        }
+        40% {
+          transform: rotate(144deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        60% {
+          transform: rotate(216deg);
+        }
+        70% {
+          transform: rotate(252deg);
+        }
+        80% {
+          transform: rotate(288deg);
+        }
+        90% {
+          transform: rotate(334deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
       }
 
-      @keyframes rescale{
-        0% {transform:rotate(0deg);}
-        10% {transform:rotate(36deg);}
-        20% {transform:rotate(72deg);}
-        30% {transform:rotate(108deg);}
-        40% {transform:rotate(144deg);}
-        50% {transform:rotate(180deg);}
-        60% {transform:rotate(216deg);}
-        70% {transform:rotate(252deg);}
-        80% {transform:rotate(288deg);}
-        90% {transform:rotate(334deg);}
-        100% {transform:rotate(360deg);}
+      @keyframes rescale {
+        0% {
+          transform: rotate(0deg);
+        }
+        10% {
+          transform: rotate(36deg);
+        }
+        20% {
+          transform: rotate(72deg);
+        }
+        30% {
+          transform: rotate(108deg);
+        }
+        40% {
+          transform: rotate(144deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        60% {
+          transform: rotate(216deg);
+        }
+        70% {
+          transform: rotate(252deg);
+        }
+        80% {
+          transform: rotate(288deg);
+        }
+        90% {
+          transform: rotate(334deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
       }
 
       &--hidden {
@@ -642,7 +693,7 @@
 
           &:hover,
           &:focus {
-            -webkit-animation:rescale 0.25s ease;
+            -webkit-animation: rescale 0.25s ease;
             animation: rescale 0.25s ease;
           }
 
@@ -658,7 +709,6 @@
         &--white {
           background-color: #ffffff;
         }
-
 
       }
 
