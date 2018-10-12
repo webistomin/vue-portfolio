@@ -3,7 +3,7 @@
     <div class="container">
       <section class="contacts" id="contacts">
         <div class="contacts__column">
-          <h3 class="contacts__title title">Contacts</h3>
+          <h3 class="contacts__title title">{{ $t("pageFooter.title") }}</h3>
           <section class="socials">
             <ul class="socials__list">
               <li class="socials__item">
@@ -47,35 +47,42 @@
               </li>
             </ul>
           </section>
-          <div class="contacts__info"><span class="contacts__desc">E-mail</span> <a
+          <div class="contacts__info"><span class="contacts__desc">{{ $t("pageFooter.firstInfo") }}</span> <a
             href="mailto:istomin.working@gmail.com" class="contacts__link">istomin.working@gmail.com</a></div>
-          <div class="contacts__info"><span class="contacts__desc">Skype</span> <a
+          <div class="contacts__info"><span class="contacts__desc">{{ $t("pageFooter.secondInfo") }}</span> <a
             href="https://join.skype.com/invite/PEQX2bCxW3pW" class="contacts__link" target="_blank"
             rel="noopener noreferrer">+79996135062</a></div>
-          <div class="contacts__info"><span class="contacts__desc">CV</span> <a href="https://hh.ru/resume/836ce1d3ff057cecc70039ed1f566a68623142"
-                                                                                class="contacts__link" target="_blank"
-                                                                                rel="noopener noreferrer"
-                                                                                title="HeadHunter">Alexey Istomin (hh.ru)</a>
+          <div class="contacts__info"><span class="contacts__desc">{{ $t("pageFooter.thirdInfo") }}</span>
+            <a href="https://hh.ru/resume/836ce1d3ff057cecc70039ed1f566a68623142"
+               class="contacts__link" target="_blank" rel="noopener noreferrer"
+               title="HeadHunter">{{ $t("pageFooter.name") }} (hh.ru)</a>
           </div>
         </div>
         <div class="contacts__column contacts__column--margin">
           <form action="" method="get" class="contacts__field"><h4 class="contacts__title contacts__title--small title">
-            Thanks</h4>
-            <p class="contacts__text">You’ve just spent <span id="minutes"></span> minutes and <span id="seconds"></span>
-              seconds looking at my homepage. Time is the most important thing we have, and unfortunately you will never
-              get it back, so thank you very much for sharing it with me. Please feel free to contact me for freelance
-              projects and collaboration.</p>
-            <div class="group"><input class="inputMaterial" type="text" value="" id="name" name="name" required
-                                      autocomplete="name" onkeyup="this.setAttribute('value', this.value);"> <span
-              class="highlight"></span> <span class="bar"></span> <label for="name">Your name</label></div>
-            <div class="group"><input class="inputMaterial" type="email" value="" id="email" name="email" required
-                                      onkeyup="this.setAttribute('value', this.value);" autocomplete="email"> <span
-              class="highlight"></span> <span class="bar"></span> <label for="email">Your e-mail</label></div>
-            <div class="group"><textarea name="message" cols="10" id="message" rows="3" class="inputMaterial" required
-                                         onkeyup="this.setAttribute('value', this.value);"></textarea> <span
-              class="highlight"></span> <span class="bar"></span> <label for="message">Your message</label></div>
-            <button class="contacts__btn btn" id="contact-submit" type="submit"><span class="contacts__btn-text"
-                                                                                      id="btn-text">Send</span>
+            {{ $t("pageFooter.secondTitle") }}</h4>
+            <p class="contacts__text" v-html="$t('pageFooter.text')">
+            </p>
+            <div class="group">
+              <input class="inputMaterial" type="text" value="" id="name" name="name" required autocomplete="name"
+                     onkeyup="this.setAttribute('value', this.value);">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label for="name">{{ $t("pageFooter.firstLabel") }}</label>
+            </div>
+            <div class="group">
+              <input class="inputMaterial" type="email" value="" id="email" name="email" required onkeyup="this.setAttribute('value', this.value);" autocomplete="email">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label for="email">{{ $t("pageFooter.secondLabel") }}</label>
+            </div>
+            <div class="group">
+              <textarea name="message" cols="10" id="message" rows="3" class="inputMaterial" required onkeyup="this.setAttribute('value', this.value);"></textarea>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label for="message">{{ $t("pageFooter.thirdLabel") }}</label></div>
+            <button class="contacts__btn btn" id="contact-submit" type="submit">
+              <span class="contacts__btn-text" id="btn-text">{{ $t("pageFooter.btn") }}</span>
               <svg class="contacts__icon" id="plane-btn" width="30" height="30">
                 <use x="0" y="0" xlink:href="#icon-plane"></use>
               </svg>
@@ -87,8 +94,7 @@
           </form>
         </div>
       </section>
-      <section class="copyright"><p class="copyright__text">©2018 ALL RIGHTS RESERVED. Alexey Istomin - junior frontend
-        developer based in Russia. </p></section>
+      <section class="copyright"><p class="copyright__text">{{ $t("pageFooter.copyright") }}</p></section>
     </div>
   </footer>
 </template>

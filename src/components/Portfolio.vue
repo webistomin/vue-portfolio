@@ -1,6 +1,6 @@
 <template>
   <section class="portfolio" id="portfolio">
-    <h3 class="portfolio__title title">Portfolio</h3>
+    <h3 class="portfolio__title title">{{ $t("portfolio.title") }}</h3>
     <ul class="portfolio__list">
       <li class="portfolio__item portfolio__item--blue" tabindex="0">
         <figure class="portfolio__figure">
@@ -26,15 +26,15 @@
             <img src="../../static/img/portfolio/movie-mobile.jpg"
                  alt="Movie App" class="portfolio__pic">
           </picture>
-          <figcaption class="portfolio__caption portfolio__caption--white portfolio__caption--black">Project "Movie App"
+          <figcaption class="portfolio__caption portfolio__caption--white portfolio__caption--black">{{ $t("portfolio.caption") }} "Movie App"
           </figcaption>
         </figure>
         <div class="portfolio__buttons">
           <a href="https://vuejs-movie-app.firebaseapp.com/" class="portfolio__link btn" target="_blank"
-             rel="noopener noreferrer">Live Demo</a>
+             rel="noopener noreferrer">{{ $t("portfolio.firstBtn") }}</a>
           <a href="https://github.com/webistomin/vuejs-movie-app"
              class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
-            View source</a>
+            {{ $t("portfolio.secondBtn") }}</a>
         </div>
       </li>
       <li class="portfolio__item portfolio__item--top" tabindex="0">
@@ -60,16 +60,16 @@
                     ../../static/img/portfolio/weather-mobile@2x.jpg 2x">
             <img src="../../static/img/portfolio/weather-mobile.jpg" alt="Weather App" class="portfolio__pic">
           </picture>
-          <figcaption class="portfolio__caption portfolio__caption--white">Project "Weather App"</figcaption>
+          <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Weather App"</figcaption>
         </figure>
         <div class="portfolio__buttons">
           <a href="https://vuejs-weather-app-32dde.firebaseapp.com/"
              class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
-            Live Demo</a>
+            {{ $t("portfolio.firstBtn") }}</a>
           <a href="https://github.com/webistomin/vuejs-weather-app"
              class="portfolio__link btn" target="_blank"
              rel="noopener noreferrer">
-            View source</a>
+            {{ $t("portfolio.secondBtn") }}</a>
         </div>
       </li>
       <li class="portfolio__item portfolio__item--margin" tabindex="0">
@@ -89,14 +89,14 @@
                     srcset="../../static/img/portfolio/table-mobile.jpg 1x, ../../static/img/portfolio/table-mobile@2x.jpg 2x">
             <img data-src="../../static/img/portfolio/table-mobile.jpg" alt="Table component" class="portfolio__pic">
           </picture>
-          <figcaption class="portfolio__caption portfolio__caption--white">Project "Table Component"</figcaption>
+          <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Table Component"</figcaption>
         </figure>
         <div class="portfolio__buttons">
           <a href="https://vuejs-table-component.firebaseapp.com/"
              class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
-            Live Demo</a>
+            {{ $t("portfolio.firstBtn") }}</a>
           <a href="https://github.com/webistomin/vuejs-table-component" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
-            View source</a>
+            {{ $t("portfolio.secondBtn") }}</a>
         </div>
       </li>
       <li class="portfolio__item" tabindex="0">
@@ -122,13 +122,13 @@
                     ../../static/img/portfolio/sport-mobile@2x.jpg 2x">
             <img src="../../static/img/portfolio/sport-mobile.jpg" alt="sport" class="portfolio__pic">
           </picture>
-          <figcaption class="portfolio__caption portfolio__caption--white">Project "Sport store"</figcaption>
+          <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Sport store"</figcaption>
         </figure>
         <div class="portfolio__buttons">
           <a href="http://ishop.mcdir.ru/"
              class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
-            Live Demo</a>
-          <a href="https://github.com/webistomin/my-shop" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">View source</a>
+            {{ $t("portfolio.firstBtn") }}</a>
+          <a href="https://github.com/webistomin/my-shop" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">{{ $t("portfolio.secondBtn") }}</a>
         </div>
       </li>
       <li class="portfolio__item portfolio__item--margin" tabindex="0">
@@ -154,18 +154,18 @@
                     ../../static/img/portfolio/brume-mobile@2x.jpg 2x">
             <img src="../../static/img/portfolio/brume-mobile.jpg" alt="brume" class="portfolio__pic">
           </picture>
-          <figcaption class="portfolio__caption portfolio__caption--white">Project "Brume"</figcaption>
+          <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Brume"</figcaption>
         </figure>
         <div class="portfolio__buttons">
           <a href="https://webistomin.github.io/brume-adaptive/"
              class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
-            Live Demo
+            {{ $t("portfolio.firstBtn") }}
           </a>
-          <a href="https://github.com/webistomin/brume-adaptive" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">View source</a>
+          <a href="https://github.com/webistomin/brume-adaptive" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">{{ $t("portfolio.secondBtn") }}</a>
         </div>
       </li>
     </ul>
-    <a href="projects.html" class="portfolio__link btn">View all projects</a></section>
+    <a href="projects.html" class="portfolio__link btn">{{ $t("portfolio.thirdBtn") }}</a></section>
 </template>
 
 <script>

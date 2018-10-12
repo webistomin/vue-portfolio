@@ -20,16 +20,15 @@
     <p class="about__text">{{ $t("about.fifthText") }}</p>
     <p class="about__text">{{ $t("about.sixthText") }}</p>
     <p class="about__text">{{ $t("about.seventhText") }}</p>
-    <h4 class="about__title about__title--small title">Education</h4>
+    <h4 class="about__title about__title--small title">{{ $t("about.titleSecond") }}</h4>
     <div class="about__desc">
       <div class="about__info">
-        <span class="about__degree">Bachelor's degree with honors</span>
+        <span class="about__degree">{{ $t("about.degree") }}</span>
         <time class="about__date">2014-2018</time>
       </div>
       <p class="about__place">
         <a href="http://eng.ggtu.ru/" class="about__link" target="_blank"
-           rel="noopener noreferrer">State University of Humanities and Technology,
-          Orekhovo-Zuyevo
+           rel="noopener noreferrer">{{ $t("about.place") }}
         </a>
       </p></div>
   </section>
