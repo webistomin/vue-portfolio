@@ -50,7 +50,7 @@
           <div class="contacts__info"><span class="contacts__desc">{{ $t("pageFooter.firstInfo") }}</span> <a
             href="mailto:istomin.working@gmail.com" class="contacts__link">istomin.working@gmail.com</a></div>
           <div class="contacts__info"><span class="contacts__desc">{{ $t("pageFooter.secondInfo") }}</span> <a
-            href="https://join.skype.com/invite/PEQX2bCxW3pW" class="contacts__link" target="_blank"
+            href="https://join.skype.com/invite/n0pX9fuy7svc" class="contacts__link" target="_blank"
             rel="noopener noreferrer">+79996135062</a></div>
           <div class="contacts__info"><span class="contacts__desc">{{ $t("pageFooter.thirdInfo") }}</span>
             <a href="https://hh.ru/resume/836ce1d3ff057cecc70039ed1f566a68623142"
