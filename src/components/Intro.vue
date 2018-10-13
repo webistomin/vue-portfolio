@@ -5,7 +5,7 @@
         <picture>
           <source type="image/webp" media="(min-width: 320px)"
                   srcset="../../static/img/me.webp 1x,
-                    ../../static/img/me@2x.jpg 2x">
+                    ../../static/img/me@2x.webp 2x">
           <source media="(min-width: 320px)"
                   srcset="../../static/img/me.jpg 1x,
                     ../../static/img/me@2x.jpg 2x">
