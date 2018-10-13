@@ -453,6 +453,7 @@
       text-transform: uppercase;
       letter-spacing: 0.25em;
       color: @color-text;
+      user-select: none;
 
       &:hover {
         color: #ffffff;

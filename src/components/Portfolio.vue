@@ -165,7 +165,10 @@
         </div>
       </li>
     </ul>
-    <a href="projects.html" class="portfolio__link btn">{{ $t("portfolio.thirdBtn") }}</a></section>
+    <router-link tag="a" to="/projects-page" class="portfolio__link btn">
+      {{ $t("portfolio.thirdBtn") }}
+    </router-link>
+  </section>
 </template>
 
 <script>

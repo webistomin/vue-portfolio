@@ -12,6 +12,7 @@ const messages = {
       firstLink: 'About me',
       secondLink: 'Portfolio',
       thirdLink: 'Contacts',
+      fourthLink: 'Home',
     },
     intro: {
       title: 'Hello',
@@ -66,6 +67,7 @@ const messages = {
       firstLink: 'Обо мне',
       secondLink: 'Портфолио',
       thirdLink: 'Контакты',
+      fourthLink: 'Главная',
     },
     intro: {
       title: 'Привет',
@@ -101,7 +103,7 @@ const messages = {
       name: 'Алексей Истомин',
       secondTitle: 'Спасибо',
       text: 'Вы уже потратили' +
-        '<span id="minutes"></span> minutes and <span id="seconds"></span>\n' +
+        ' <span id="minutes"></span> минут и <span id="seconds"></span> секунд\n' +
         'изучая мою страничку. Время — это самое важное, что может потратить человек в своей жизни. Оно не возвращается и мы должны научиться использовать его с умом. Пожалуйста, не стесняйтесь обращаться ко мне по какому-либо вопросу. Буду рад нашему знакомству и сотрудничеству в дальнейшем.',
       firstLabel: 'Ваше имя',
       secondLabel: 'Ваш e-mail',

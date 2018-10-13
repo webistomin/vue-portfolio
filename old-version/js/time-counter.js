@@ -1,19 +1,19 @@
-var minutesLabel = document.getElementById("minutes");
-var secondsLabel = document.getElementById("seconds");
-var totalSeconds = 0;
-setInterval(setTime, 1000);
-
-function setTime() {
-  ++totalSeconds;
-  secondsLabel.innerHTML = pad(totalSeconds % 60);
-  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
-}
+const minutesLabel = document.getElementById('minutes');
+const secondsLabel = document.getElementById('seconds');
+let totalSeconds = 0;
 
 function pad(val) {
-  var valString = val + "";
+  const valString = `${val}`;
   if (valString.length < 2) {
-    return "0" + valString;
-  } else {
-    return valString;
+    return `0${valString}`;
   }
+  return valString;
 }
+
+function setTime() {
+  totalSeconds += 1;
+  secondsLabel.innerHTML = pad(totalSeconds % 60);
+  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60, 10));
+}
+
+setInterval(setTime, 1000);

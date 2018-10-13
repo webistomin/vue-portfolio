@@ -2,8 +2,16 @@
   <section class="intro">
     <div class="intro__column intro__column--margin">
       <figure class="intro__figure">
-        <img src="../../static/img/me.jpg" alt="Alexey Istomin" class="intro__img" width="552" height="628">
-        <figcaption class="intro__caption">Love Vue.js, seriously!</figcaption>
+        <picture>
+          <source type="image/webp" media="(min-width: 320px)"
+                  srcset="../../static/img/me.webp 1x,
+                    ../../static/img/me@2x.jpg 2x">
+          <source media="(min-width: 320px)"
+                  srcset="../../static/img/me.jpg 1x,
+                    ../../static/img/me@2x.jpg 2x">
+          <img src="../../static/img/me.jpg" alt="Alexey Istomin" class="intro__img" width="552" height="628">
+        </picture>
+        <!--<figcaption class="intro__caption">Love Vue.js, seriously!</figcaption>-->
       </figure>
     </div>
     <div class="intro__column intro__column--padding">
@@ -88,6 +96,7 @@
       border: 2px solid @color-main;
       transition: all 0.3s;
       overflow: hidden;
+      user-select: none;
 
       &:active {
         transform: scale(0.8);
