@@ -4,20 +4,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>vue-portfolio</title>
+    <title>Alexey Istomin / Frontend Developer</title>
+    <meta name="description" content="I’m Alexey junior frontend developer based in Russia">
+    <meta property="og:image:width" content="1103">
+    <meta property="og:image:height" content="577">
+    <meta property="og:title" content="Alexey Istomin Frontend developer">
+    <meta property="og:description" content="I&rsquo;m junior frontend developer based in Russia">
+    <meta name="yandex-verification" content="e40d681c4b094086">
+    <meta name="google-site-verification" content="UnLetmkWA1WVaJxJ8jVdhGDunUX0B2-6b_qi2gA6iLs">
+    <meta property="og:url" content="webistom.in">
+    <meta property="og:image" content="webistom.in/og-image.jpg">
     <link rel="icon" type="image/png" sizes="32x32" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/favicon-16x16.png">
     <!--[if IE]><link rel="shortcut icon" href="/static/img/icons/favicon.ico"><![endif]-->
     <!-- Add to home screen for Android and modern mobile browsers -->
     <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>static/manifest.json">
-    <meta name="theme-color" content="#4DBA87">
+    <meta name="theme-color" content="#2d89ef">
 
     <!-- Add to home screen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="vue-portfolio">
+    <meta name="apple-mobile-web-app-title" content="webistomin">
     <link rel="apple-touch-icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/apple-touch-icon-152x152.png">
-    <link rel="mask-icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/safari-pinned-tab.svg" color="#4DBA87">
+    <link rel="mask-icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/safari-pinned-tab.svg" color="#2d89ef">
     <!-- Add to home screen for Windows -->
     <meta name="msapplication-TileImage" content="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/msapplication-icon-144x144.png">
     <meta name="msapplication-TileColor" content="#000000">
@@ -25,6 +34,7 @@
         for (var file of chunk.files) {
           if (file.match(/\.(js|css)$/)) { %>
     <link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>"><% }}} %>
+
   </head>
   <body>
   <!-- this svg is a container for svg icons and should not appear on the page.To emphasise this I use inline style="display: none" -->
@@ -58,7 +68,7 @@
     </symbol>
   </svg>
     <noscript>
-      This is your fallback content in case JavaScript fails to load.
+      Please turn javascript on and reload the page 😋
     </noscript>
     <div id="app"></div>
     <!-- Todo: only include in production -->
