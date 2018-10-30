@@ -1,22 +1,21 @@
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector('.contacts__field').addEventListener("submit", postData);
-});
-
 function postData(formsubmission) {
+  const name = encodeURIComponent(document.getElementById('name').value);
+  const email = encodeURIComponent(document.getElementById('email').value);
+  const message = encodeURIComponent(document.getElementById('message').value);
 
-  var name = encodeURIComponent(document.getElementById("name").value);
-  var email = encodeURIComponent(document.getElementById("email").value);
-  var message = encodeURIComponent(document.getElementById("message").value);
-
+  // eslint-disable-next-line max-len
   // Parameters to send to PHP script. The bits in the "quotes" are the POST indexes to be sent to the PHP script.
-  var params = "Name=" + name + "&email=" + email + "&message=" + message;
+  const params = `Name=${name}&email=${email}&message=${message}`;
 
-  var http = new XMLHttpRequest();
-  http.open("POST", "send.php", true);
+  const http = new XMLHttpRequest();
+  http.open('POST', 'send.php', true);
 
   // Set headers
-  http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
   http.send(params);
   formsubmission.preventDefault();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.contacts__field').addEventListener('submit', postData);
+});

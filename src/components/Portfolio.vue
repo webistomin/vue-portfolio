@@ -26,7 +26,7 @@
             <img src="../../static/img/portfolio/movie-mobile.jpg"
                  alt="Movie App" class="portfolio__pic">
           </picture>
-          <figcaption class="portfolio__caption portfolio__caption--white portfolio__caption--black">{{ $t("portfolio.caption") }} "Movie App"
+          <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Movie App"
           </figcaption>
         </figure>
         <div class="portfolio__buttons">
@@ -38,6 +38,42 @@
         </div>
       </li>
       <li class="portfolio__item portfolio__item--top" tabindex="0">
+        <figure class="portfolio__figure">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="../../static/img/portfolio/yandex-desktop.webp 1x,
+                    ../../static/img/portfolio/yandex-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 992px)"
+                    srcset="../../static/img/portfolio/yandex-tablet.webp 1x,
+                    ../../static/img/portfolio/yandex-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)"
+                    srcset="../../static/img/portfolio/yandex-mobile.webp 1x,
+                    ../../static/img/portfolio/yandex-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)"
+                    srcset="../../static/img/portfolio/yandex-desktop.jpg 1x,
+                    ../../static/img/portfolio/yandex-desktop@2x.jpg 2x">
+            <source media="(min-width: 992px)"
+                    srcset="../../static/img/portfolio/yandex-tablet.jpg 1x,
+                    ../../static/img/portfolio/yandex-tablet@2x.jpg 2x">
+            <source media="(min-width: 320px)"
+                    srcset="../../static/img/portfolio/yandex-mobile.jpg 1x,
+                    ../../static/img/portfolio/yandex-mobile@2x.jpg 2x">
+            <img src="../../static/img/portfolio/yandex-mobile.jpg"
+                 alt="Yandex.Rooms" class="portfolio__pic">
+          </picture>
+          <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Yandex.Rooms"
+          </figcaption>
+        </figure>
+        <div class="portfolio__buttons">
+          <a href="https://yandex-rooms.firebaseapp.com/" class="portfolio__link btn" target="_blank"
+             rel="noopener noreferrer">{{ $t("portfolio.firstBtn") }}
+          </a>
+          <a href="https://github.com/webistomin/yandex-test"
+             class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
+            {{ $t("portfolio.secondBtn") }}</a>
+        </div>
+      </li>
+      <li class="portfolio__item portfolio__item--margin" tabindex="0">
         <figure class="portfolio__figure">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
@@ -72,34 +108,39 @@
             {{ $t("portfolio.secondBtn") }}</a>
         </div>
       </li>
-      <li class="portfolio__item portfolio__item--margin" tabindex="0">
+      <li class="portfolio__item" tabindex="0">
         <figure class="portfolio__figure">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/table-desktop.webp 1x, ../../static/img/portfolio/table-desktop@2x.webp 2x">
+                    srcset="../../static/img/portfolio/aviasales-desktop.webp 1x,
+                    ../../static/img/portfolio/aviasales-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/table-tablet.webp 1x, ../../static/img/portfolio/table-tablet@2x.webp 2x">
+                    srcset="../../static/img/portfolio/aviasales-tablet.webp 1x,
+                    ../../static/img/portfolio/aviasales-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/table-mobile.webp 1x, ../../static/img/portfolio/table-mobile@2x.webp 2x">
+                    srcset="../../static/img/portfolio/aviasales-mobile.webp 1x,
+                    ../../static/img/portfolio/aviasales-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/table-desktop.jpg 1x, ../../static/img/portfolio/table-desktop@2x.jpg 2x">
+                    srcset="../../static/img/portfolio/aviasales-desktop.jpg 1x,
+                    ../../static/img/portfolio/aviasales-desktop@2x.jpg 2x">
             <source media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/table-tablet.jpg 1x, ../../static/img/portfolio/table-tablet@2x.jpg 2x">
+                    srcset="../../static/img/portfolio/aviasales-tablet.jpg 1x,
+                    ../../static/img/portfolio/aviasales-tablet@2x.jpg 2x">
             <source media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/table-mobile.jpg 1x, ../../static/img/portfolio/table-mobile@2x.jpg 2x">
-            <img data-src="../../static/img/portfolio/table-mobile.jpg" alt="Table component" class="portfolio__pic">
+                    srcset="../../static/img/portfolio/aviasales-mobile.jpg 1x,
+                    ../../static/img/portfolio/aviasales-mobile@2x.jpg 2x">
+            <img src="../../static/img/portfolio/aviasales-mobile.jpg" alt="Aviasales Test" class="portfolio__pic">
           </picture>
-          <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Table Component"</figcaption>
+          <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Aviasales Test"</figcaption>
         </figure>
         <div class="portfolio__buttons">
-          <a href="https://vuejs-table-component.firebaseapp.com/"
+          <a href="https://aviasales-test-b5f54.firebaseapp.com/"
              class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
             {{ $t("portfolio.firstBtn") }}</a>
-          <a href="https://github.com/webistomin/vuejs-table-component" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
-            {{ $t("portfolio.secondBtn") }}</a>
+          <a href="https://github.com/webistomin/aviasales-test" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">{{ $t("portfolio.secondBtn") }}</a>
         </div>
       </li>
-      <li class="portfolio__item" tabindex="0">
+      <li class="portfolio__item portfolio__item--margin" tabindex="0">
         <figure class="portfolio__figure">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
@@ -129,39 +170,6 @@
              class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
             {{ $t("portfolio.firstBtn") }}</a>
           <a href="https://github.com/webistomin/my-shop" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">{{ $t("portfolio.secondBtn") }}</a>
-        </div>
-      </li>
-      <li class="portfolio__item portfolio__item--margin" tabindex="0">
-        <figure class="portfolio__figure">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/brume-desktop.webp 1x,
-                    ../../static/img/portfolio/brume-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/brume-tablet.webp 1x,
-                    ../../static/img/portfolio/brume-tablet@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/brume-mobile.webp 1x,
-                    ../../static/img/portfolio/brume-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/brume-desktop.jpg 1x,
-                    ../../static/img/portfolio/brume-desktop@2x.jpg 2x">
-            <source media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/brume-tablet.jpg 1x,
-                    ../../static/img/portfolio/brume-tablet@2x.jpg 2x">
-            <source media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/brume-mobile.jpg 1x,
-                    ../../static/img/portfolio/brume-mobile@2x.jpg 2x">
-            <img src="../../static/img/portfolio/brume-mobile.jpg" alt="brume" class="portfolio__pic">
-          </picture>
-          <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Brume"</figcaption>
-        </figure>
-        <div class="portfolio__buttons">
-          <a href="https://webistomin.github.io/brume-adaptive/"
-             class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
-            {{ $t("portfolio.firstBtn") }}
-          </a>
-          <a href="https://github.com/webistomin/brume-adaptive" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">{{ $t("portfolio.secondBtn") }}</a>
         </div>
       </li>
     </ul>
