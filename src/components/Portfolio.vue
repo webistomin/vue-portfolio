@@ -6,25 +6,25 @@
         <figure class="portfolio__figure">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/movie-desktop.webp 1x,
+                    data-srcset="../../static/img/portfolio/movie-desktop.webp 1x,
                     ../../static/img/portfolio/movie-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/movie-tablet.webp 1x,
+                    data-srcset="../../static/img/portfolio/movie-tablet.webp 1x,
                     ../../static/img/portfolio/movie-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/movie-mobile.webp 1x,
+                    data-srcset="../../static/img/portfolio/movie-mobile.webp 1x,
                     ../../static/img/portfolio/movie-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/movie-desktop.jpg 1x,
+                    data-srcset="../../static/img/portfolio/movie-desktop.jpg 1x,
                     ../../static/img/portfolio/movie-desktop@2x.jpg 2x">
             <source media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/movie-tablet.jpg 1x,
+                    data-srcset="../../static/img/portfolio/movie-tablet.jpg 1x,
                     ../../static/img/portfolio/movie-tablet@2x.jpg 2x">
             <source media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/movie-mobile.jpg 1x,
+                    data-srcset="../../static/img/portfolio/movie-mobile.jpg 1x,
                     ../../static/img/portfolio/movie-mobile@2x.jpg 2x">
-            <img src="../../static/img/portfolio/movie-mobile.jpg"
-                 alt="Movie App" class="portfolio__pic">
+            <img data-src="../../static/img/portfolio/movie-mobile.jpg"
+                 alt="Movie App" class="portfolio__pic lazyload">
           </picture>
           <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Movie App"
           </figcaption>
@@ -41,25 +41,25 @@
         <figure class="portfolio__figure">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/yandex-desktop.webp 1x,
+                    data-srcset="../../static/img/portfolio/yandex-desktop.webp 1x,
                     ../../static/img/portfolio/yandex-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/yandex-tablet.webp 1x,
+                    data-srcset="../../static/img/portfolio/yandex-tablet.webp 1x,
                     ../../static/img/portfolio/yandex-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/yandex-mobile.webp 1x,
+                    data-srcset="../../static/img/portfolio/yandex-mobile.webp 1x,
                     ../../static/img/portfolio/yandex-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/yandex-desktop.jpg 1x,
+                    data-srcset="../../static/img/portfolio/yandex-desktop.jpg 1x,
                     ../../static/img/portfolio/yandex-desktop@2x.jpg 2x">
             <source media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/yandex-tablet.jpg 1x,
+                    data-srcset="../../static/img/portfolio/yandex-tablet.jpg 1x,
                     ../../static/img/portfolio/yandex-tablet@2x.jpg 2x">
             <source media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/yandex-mobile.jpg 1x,
+                    data-srcset="../../static/img/portfolio/yandex-mobile.jpg 1x,
                     ../../static/img/portfolio/yandex-mobile@2x.jpg 2x">
-            <img src="../../static/img/portfolio/yandex-mobile.jpg"
-                 alt="Yandex.Rooms" class="portfolio__pic">
+            <img data-src="../../static/img/portfolio/yandex-mobile.jpg"
+                 alt="Yandex.Rooms" class="portfolio__pic lazyload">
           </picture>
           <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Yandex.Rooms"
           </figcaption>
@@ -77,24 +77,24 @@
         <figure class="portfolio__figure">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/weather-desktop.webp 1x,
+                    data-srcset="../../static/img/portfolio/weather-desktop.webp 1x,
                     ../../static/img/portfolio/weather-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/weather-tablet.webp 1x,
+                    data-srcset="../../static/img/portfolio/weather-tablet.webp 1x,
                     ../../static/img/portfolio/weather-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/weather-mobile.webp 1x,
+                    data-srcset="../../static/img/portfolio/weather-mobile.webp 1x,
                     ../../static/img/portfolio/weather-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/weather-desktop.jpg 1x,
+                    data-srcset="../../static/img/portfolio/weather-desktop.jpg 1x,
                     ../../static/img/portfolio/weather-desktop@2x.jpg 2x">
             <source media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/weather-tablet.jpg 1x,
+                    data-srcset="../../static/img/portfolio/weather-tablet.jpg 1x,
                     ../../static/img/portfolio/weather-tablet@2x.jpg 2x">
             <source media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/brume-mobile.jpg 1x,
+                    data-srcset="../../static/img/portfolio/brume-mobile.jpg 1x,
                     ../../static/img/portfolio/weather-mobile@2x.jpg 2x">
-            <img src="../../static/img/portfolio/weather-mobile.jpg" alt="Weather App" class="portfolio__pic">
+            <img data-src="../../static/img/portfolio/weather-mobile.jpg" alt="Weather App" class="portfolio__pic lazyload">
           </picture>
           <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Weather App"</figcaption>
         </figure>
@@ -112,24 +112,24 @@
         <figure class="portfolio__figure">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/aviasales-desktop.webp 1x,
+                    data-srcset="../../static/img/portfolio/aviasales-desktop.webp 1x,
                     ../../static/img/portfolio/aviasales-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/aviasales-tablet.webp 1x,
+                    data-srcset="../../static/img/portfolio/aviasales-tablet.webp 1x,
                     ../../static/img/portfolio/aviasales-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/aviasales-mobile.webp 1x,
+                    data-srcset="../../static/img/portfolio/aviasales-mobile.webp 1x,
                     ../../static/img/portfolio/aviasales-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/aviasales-desktop.jpg 1x,
+                    data-srcset="../../static/img/portfolio/aviasales-desktop.jpg 1x,
                     ../../static/img/portfolio/aviasales-desktop@2x.jpg 2x">
             <source media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/aviasales-tablet.jpg 1x,
+                    data-srcset="../../static/img/portfolio/aviasales-tablet.jpg 1x,
                     ../../static/img/portfolio/aviasales-tablet@2x.jpg 2x">
             <source media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/aviasales-mobile.jpg 1x,
+                    data-srcset="../../static/img/portfolio/aviasales-mobile.jpg 1x,
                     ../../static/img/portfolio/aviasales-mobile@2x.jpg 2x">
-            <img src="../../static/img/portfolio/aviasales-mobile.jpg" alt="Aviasales Test" class="portfolio__pic">
+            <img data-src="../../static/img/portfolio/aviasales-mobile.jpg" alt="Aviasales Test" class="portfolio__pic lazyload">
           </picture>
           <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Aviasales Test"</figcaption>
         </figure>
@@ -144,24 +144,24 @@
         <figure class="portfolio__figure">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/sport-desktop.webp 1x,
+                    data-srcset="../../static/img/portfolio/sport-desktop.webp 1x,
                     ../../static/img/portfolio/sport-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/sport-tablet.webp 1x,
+                    data-srcset="../../static/img/portfolio/sport-tablet.webp 1x,
                     ../../static/img/portfolio/sport-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/sport-mobile.webp 1x,
+                    data-srcset="../../static/img/portfolio/sport-mobile.webp 1x,
                     ../../static/img/portfolio/sport-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)"
-                    srcset="../../static/img/portfolio/sport-desktop.jpg 1x,
+                    data-srcset="../../static/img/portfolio/sport-desktop.jpg 1x,
                     ../../static/img/portfolio/sport-desktop@2x.jpg 2x">
             <source media="(min-width: 992px)"
-                    srcset="../../static/img/portfolio/sport-tablet.jpg 1x,
+                    data-srcset="../../static/img/portfolio/sport-tablet.jpg 1x,
                     ../../static/img/portfolio/sport-tablet@2x.jpg 2x">
             <source media="(min-width: 320px)"
-                    srcset="../../static/img/portfolio/sport-mobile.jpg 1x,
+                    data-srcset="../../static/img/portfolio/sport-mobile.jpg 1x,
                     ../../static/img/portfolio/sport-mobile@2x.jpg 2x">
-            <img src="../../static/img/portfolio/sport-mobile.jpg" alt="sport" class="portfolio__pic">
+            <img data-src="../../static/img/portfolio/sport-mobile.jpg" alt="sport" class="portfolio__pic lazyload">
           </picture>
           <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Sport store"</figcaption>
         </figure>

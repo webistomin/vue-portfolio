@@ -13,10 +13,10 @@ function validateEmail($data){
 // Use validateEmail function above
 if(validateEmail($_POST['email'])){
 	// Sanitise data
-	$name = htmlspecialchars($_POST['name']);
+	$name = $_POST['name'];
 	$email = $_POST['email'];
-	$message = htmlspecialchars($_POST['message']);
-	
+	$message = $_POST['message'];
+
 	$content = "<p>Hey hey,</p>
 		<p>You have recieved an email from $name via the website's 'Contact Us' form. Here's the message:</p>
 		<p>$message</p>

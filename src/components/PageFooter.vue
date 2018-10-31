@@ -3,7 +3,7 @@
     <div class="container">
       <section class="contacts" id="contacts">
         <div class="contacts__column">
-          <h3 class="contacts__title title">{{ $t("pageFooter.title") }}</h3>
+          <h3 class="contacts__title title">{{ $t('pageFooter.title') }}</h3>
           <section class="socials">
             <ul class="socials__list">
               <li class="socials__item">
@@ -38,7 +38,8 @@
                 </a>
               </li>
               <li class="socials__item">
-                <a href="https://github.com/webistomin" class="socials__link" target="_blank"
+                <a href="https://github.com/webistomin"
+                   class="socials__link" target="_blank"
                    rel="noopener noreferrer" title="GitHub">
                   <svg class="socials__icon" width="25" height="25">
                     <use x="0" y="0" xlink:href="#icon-github"></use>
@@ -47,46 +48,71 @@
               </li>
             </ul>
           </section>
-          <div class="contacts__info"><span class="contacts__desc">{{ $t("pageFooter.firstInfo") }}</span> <a
-            href="mailto:istomin.working@gmail.com" class="contacts__link">istomin.working@gmail.com</a></div>
-          <div class="contacts__info"><span class="contacts__desc">{{ $t("pageFooter.secondInfo") }}</span> <a
-            href="https://join.skype.com/invite/n0pX9fuy7svc" class="contacts__link" target="_blank"
-            rel="noopener noreferrer">+79996135062</a></div>
-          <div class="contacts__info"><span class="contacts__desc">{{ $t("pageFooter.thirdInfo") }}</span>
+          <div class="contacts__info">
+            <span class="contacts__desc">{{ $t('pageFooter.firstInfo') }}</span>
+            <a href="mailto:istomin.working@gmail.com" class="contacts__link">
+              istomin.working@gmail.com
+            </a>
+          </div>
+          <div class="contacts__info">
+            <span class="contacts__desc">{{ $t('pageFooter.secondInfo') }}</span>
+            <a href="https://join.skype.com/invite/n0pX9fuy7svc"
+               class="contacts__link" target="_blank"
+            rel="noopener noreferrer">+79996135062</a>
+          </div>
+          <div class="contacts__info">
+            <span class="contacts__desc">{{ $t('pageFooter.thirdInfo') }}</span>
             <a href="https://hh.ru/resume/836ce1d3ff057cecc70039ed1f566a68623142"
                class="contacts__link" target="_blank" rel="noopener noreferrer"
-               title="HeadHunter">{{ $t("pageFooter.name") }} (hh.ru)</a>
+               title="HeadHunter">{{ $t('pageFooter.name') }} (hh.ru)</a>
           </div>
         </div>
         <div class="contacts__column contacts__column--margin">
-          <form action="" method="get" class="contacts__field"><h4 class="contacts__title contacts__title--small title">
-            {{ $t("pageFooter.secondTitle") }}</h4>
+          <form action="#" method="get" class="contacts__field">
+            <h4 class="contacts__title contacts__title--small title">
+            {{ $t('pageFooter.secondTitle') }}
+            </h4>
             <p class="contacts__text" v-html="$t('pageFooter.text')">
             </p>
             <div class="group">
-              <input class="inputMaterial" type="text" value="" id="name" name="name" required autocomplete="name"
-                     onkeyup="this.setAttribute('value', this.value);">
+              <input class="inputMaterial" type="text"
+                     id="name" name="name"
+                     ref="inputName"
+                     required autocomplete="name"
+                     v-model.trim="name">
               <span class="highlight"></span>
               <span class="bar"></span>
-              <label for="name">{{ $t("pageFooter.firstLabel") }}</label>
+              <label for="name">{{ $t('pageFooter.firstLabel') }}</label>
             </div>
             <div class="group">
-              <input class="inputMaterial" type="email" value="" id="email" name="email" required onkeyup="this.setAttribute('value', this.value);" autocomplete="email">
+              <input class="inputMaterial" type="email"
+                     ref="inputEmail"
+                     id="email" name="email"
+                     value=""
+                     required v-model.trim="email"
+                     autocomplete="email">
               <span class="highlight"></span>
               <span class="bar"></span>
-              <label for="email">{{ $t("pageFooter.secondLabel") }}</label>
+              <label for="email">{{ $t('pageFooter.secondLabel') }}</label>
             </div>
             <div class="group">
-              <textarea name="message" cols="10" id="message" rows="3" class="inputMaterial" required onkeyup="this.setAttribute('value', this.value);"></textarea>
+              <textarea name="message" cols="10" id="message"
+                        ref="inputMessage"
+                        rows="3" class="inputMaterial" required
+                        v-model.trim="message">
+              </textarea>
               <span class="highlight"></span>
               <span class="bar"></span>
-              <label for="message">{{ $t("pageFooter.thirdLabel") }}</label></div>
-            <button class="contacts__btn btn" id="contact-submit" type="submit">
-              <span class="contacts__btn-text" id="btn-text">{{ $t("pageFooter.btn") }}</span>
-              <svg class="contacts__icon" id="plane-btn" width="30" height="30">
+              <label for="message">{{ $t('pageFooter.thirdLabel') }}</label></div>
+              <button class="contacts__btn btn" id="contact-submit"
+                      type="submit" ref="submitBtn">
+              <span class="contacts__btn-text" id="btn-text" ref="btnText">
+                {{ $t('pageFooter.btn') }}
+              </span>
+              <svg class="contacts__icon" id="plane-btn" ref="planeBtn" width="30" height="30">
                 <use x="0" y="0" xlink:href="#icon-plane"></use>
               </svg>
-              <svg class="contacts__icon contacts__icon--hidden contacts__icon--absolute" id="plane-btn-absolute"
+              <svg class="contacts__icon contacts__icon--hidden contacts__icon--absolute" id="plane-btn-absolute" ref="planeBtnAbsolute"
                    width="30" height="30">
                 <use x="0" y="0" xlink:href="#icon-plane"></use>
               </svg>
@@ -94,7 +120,9 @@
           </form>
         </div>
       </section>
-      <section class="copyright"><p class="copyright__text">{{ $t("pageFooter.copyright") }}</p></section>
+      <section class="copyright">
+        <p class="copyright__text">{{ $t('pageFooter.copyright') }}</p>
+      </section>
     </div>
   </footer>
 </template>
@@ -102,7 +130,11 @@
 <script>
   export default {
     data() {
-      return {};
+      return {
+        name: '',
+        email: '',
+        message: '',
+      };
     },
     mounted() {
       const minutesLabel = document.getElementById('minutes');
@@ -124,6 +156,50 @@
       }
 
       setInterval(setTime, 1000);
+
+      const nameInput = this.$refs.inputName;
+      const emailInput = this.$refs.inputEmail;
+      const messageInput = this.$refs.inputMessage;
+      const send = this.$refs.submitBtn;
+      const btnText = this.$refs.btnText;
+      const plane = this.$refs.planeBtn;
+      const planeAbsolute = this.$refs.planeBtnAbsolute;
+
+      send.onclick = () => {
+        if (nameInput.validity.valid && emailInput.validity.valid && messageInput.validity.valid) {
+          planeAbsolute.classList.remove('contacts__icon--hidden');
+          planeAbsolute.classList.add('contacts__icon--visible');
+          planeAbsolute.classList.add('fly');
+          btnText.classList.add('fade');
+          btnText.innerHTML = this.$locale === 'ru' ? 'Отправлено' : 'Sent';
+          plane.innerHTML = '<use x="0" y="0" xlink:href="#icon-check"></use>';
+        }
+      };
+
+      function postData(formSubmission) {
+        const name = encodeURIComponent(this.name);
+        const email = encodeURIComponent(this.email);
+        const message = encodeURIComponent(this.message);
+
+        // eslint-disable-next-line max-len
+        // Parameters to send to PHP script. The bits in the "quotes" are the POST indexes to be sent to the PHP script.
+        const params = `Name=${name}&email=${email}&message=${message}`;
+
+        const http = new XMLHttpRequest();
+        http.open('POST', 'send.php', true);
+
+        // Set headers
+        http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        http.send(params);
+        formSubmission.preventDefault();
+        this.name = '';
+        this.email = '';
+        this.message = '';
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('.contacts__field').addEventListener('submit', postData);
+      });
     },
     updated() {
       const minutesLabel = document.getElementById('minutes');

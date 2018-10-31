@@ -5,6 +5,7 @@ import vueSmoothScroll from 'vue-smoothscroll';
 import App from './App';
 import router from './router';
 import i18n from './i18n/index';
+import './assets/lazyload';
 import './assets/fonts.less';
 import './assets/variables.less';
 import './assets/normalize.less';

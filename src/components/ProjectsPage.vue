@@ -196,24 +196,24 @@
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/aviasales-desktop.webp 1x,
+                          data-srcset="../../static/img/portfolio/aviasales-desktop.webp 1x,
                     ../../static/img/portfolio/aviasales-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/aviasales-tablet.webp 1x,
+                          data-srcset="../../static/img/portfolio/aviasales-tablet.webp 1x,
                     ../../static/img/portfolio/aviasales-tablet@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/aviasales-mobile.webp 1x,
+                          data-srcset="../../static/img/portfolio/aviasales-mobile.webp 1x,
                     ../../static/img/portfolio/aviasales-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/aviasales-desktop.jpg 1x,
+                          data-srcset="../../static/img/portfolio/aviasales-desktop.jpg 1x,
                     ../../static/img/portfolio/aviasales-desktop@2x.jpg 2x">
                   <source media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/aviasales-tablet.jpg 1x,
+                          data-srcset="../../static/img/portfolio/aviasales-tablet.jpg 1x,
                     ../../static/img/portfolio/aviasales-tablet@2x.jpg 2x">
                   <source media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/aviasales-mobile.jpg 1x,
+                          data-srcset="../../static/img/portfolio/aviasales-mobile.jpg 1x,
                     ../../static/img/portfolio/aviasales-mobile@2x.jpg 2x">
-                  <img src="../../static/img/portfolio/aviasales-mobile.jpg" alt="Aviasales Test" class="portfolio__pic">
+                  <img data-src="../../static/img/portfolio/aviasales-mobile.jpg" alt="Aviasales Test" class="portfolio__pic lazyload">
                 </picture>
                 <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Aviasales Test"</figcaption>
               </figure>
@@ -228,24 +228,24 @@
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/sport-desktop.webp 1x,
+                          data-srcset="../../static/img/portfolio/sport-desktop.webp 1x,
                     ../../static/img/portfolio/sport-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/sport-tablet.webp 1x,
+                          data-srcset="../../static/img/portfolio/sport-tablet.webp 1x,
                     ../../static/img/portfolio/sport-tablet@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/sport-mobile.webp 1x,
+                          data-srcset="../../static/img/portfolio/sport-mobile.webp 1x,
                     ../../static/img/portfolio/sport-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/sport-desktop.jpg 1x,
+                          data-srcset="../../static/img/portfolio/sport-desktop.jpg 1x,
                     ../../static/img/portfolio/sport-desktop@2x.jpg 2x">
                   <source media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/sport-tablet.jpg 1x,
+                          data-srcset="../../static/img/portfolio/sport-tablet.jpg 1x,
                     ../../static/img/portfolio/sport-tablet@2x.jpg 2x">
                   <source media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/sport-mobile.jpg 1x,
+                          data-srcset="../../static/img/portfolio/sport-mobile.jpg 1x,
                     ../../static/img/portfolio/sport-mobile@2x.jpg 2x">
-                  <img src="../../static/img/portfolio/sport-mobile.jpg" alt="sport" class="portfolio__pic">
+                  <img data-src="../../static/img/portfolio/sport-mobile.jpg" alt="sport" class="portfolio__pic lazyload">
                 </picture>
                 <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Sport store"</figcaption>
               </figure>
@@ -260,18 +260,18 @@
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/table-desktop.webp 1x, ../../static/img/portfolio/table-desktop@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/table-desktop.webp 1x, ../../static/img/portfolio/table-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/table-tablet.webp 1x, ../../static/img/portfolio/table-tablet@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/table-tablet.webp 1x, ../../static/img/portfolio/table-tablet@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/table-mobile.webp 1x, ../../static/img/portfolio/table-mobile@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/table-mobile.webp 1x, ../../static/img/portfolio/table-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/table-desktop.jpg 1x, ../../static/img/portfolio/table-desktop@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/table-desktop.jpg 1x, ../../static/img/portfolio/table-desktop@2x.jpg 2x">
                   <source media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/table-tablet.jpg 1x, ../../static/img/portfolio/table-tablet@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/table-tablet.jpg 1x, ../../static/img/portfolio/table-tablet@2x.jpg 2x">
                   <source media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/table-mobile.jpg 1x, ../../static/img/portfolio/table-mobile@2x.jpg 2x">
-                  <img data-src="../../static/img/portfolio/table-mobile.jpg" alt="Table component" class="portfolio__pic">
+                          data-srcset="../../static/img/portfolio/table-mobile.jpg 1x, ../../static/img/portfolio/table-mobile@2x.jpg 2x">
+                  <img data-src="../../static/img/portfolio/table-mobile.jpg" alt="Table component" class="portfolio__pic lazyload">
                 </picture>
                 <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Table Component"</figcaption>
               </figure>
@@ -287,24 +287,24 @@
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/brume-desktop.webp 1x,
+                          data-srcset="../../static/img/portfolio/brume-desktop.webp 1x,
                     ../../static/img/portfolio/brume-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/brume-tablet.webp 1x,
+                          data-srcset="../../static/img/portfolio/brume-tablet.webp 1x,
                     ../../static/img/portfolio/brume-tablet@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/brume-mobile.webp 1x,
+                          data-srcset="../../static/img/portfolio/brume-mobile.webp 1x,
                     ../../static/img/portfolio/brume-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/brume-desktop.jpg 1x,
+                          data-srcset="../../static/img/portfolio/brume-desktop.jpg 1x,
                     ../../static/img/portfolio/brume-desktop@2x.jpg 2x">
                   <source media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/brume-tablet.jpg 1x,
+                          data-srcset="../../static/img/portfolio/brume-tablet.jpg 1x,
                     ../../static/img/portfolio/brume-tablet@2x.jpg 2x">
                   <source media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/brume-mobile.jpg 1x,
+                          data-srcset="../../static/img/portfolio/brume-mobile.jpg 1x,
                     ../../static/img/portfolio/brume-mobile@2x.jpg 2x">
-                  <img src="../../static/img/portfolio/brume-mobile.jpg" alt="brume" class="portfolio__pic">
+                  <img data-src="../../static/img/portfolio/brume-mobile.jpg" alt="brume" class="portfolio__pic lazyload">
                 </picture>
                 <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Brume"</figcaption>
               </figure>
@@ -320,18 +320,18 @@
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/cat-desktop.webp 1x, ../../static/img/portfolio/cat-desktop@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/cat-desktop.webp 1x, ../../static/img/portfolio/cat-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/cat-tablet.webp 1x, ../../static/img/portfolio/cat-tablet@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/cat-tablet.webp 1x, ../../static/img/portfolio/cat-tablet@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/cat-mobile.webp 1x, ../../static/img/portfolio/cat-mobile@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/cat-mobile.webp 1x, ../../static/img/portfolio/cat-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/cat-desktop.jpg 1x, ../../static/img/portfolio/cat-desktop@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/cat-desktop.jpg 1x, ../../static/img/portfolio/cat-desktop@2x.jpg 2x">
                   <source media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/cat-tablet.jpg 1x, ../../static/img/portfolio/cat-tablet@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/cat-tablet.jpg 1x, ../../static/img/portfolio/cat-tablet@2x.jpg 2x">
                   <source media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/cakes-mobile.jpg 1x, ../../static/img/portfolio/cat-mobile@2x.jpg 2x">
-                  <img src="../../static/img/portfolio/cat-mobile.jpg" alt="Cat Energy" class="portfolio__pic" width="" height="">
+                          data-srcset="../../static/img/portfolio/cakes-mobile.jpg 1x, ../../static/img/portfolio/cat-mobile@2x.jpg 2x">
+                  <img data-src="../../static/img/portfolio/cat-mobile.jpg" alt="Cat Energy" class="portfolio__pic lazyload">
                 </picture>
                 <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Cat Energy"</figcaption>
               </figure>
@@ -343,19 +343,18 @@
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/arbitration-desktop.webp 1x, ../../static/img/portfolio/arbitration-desktop@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/arbitration-desktop.webp 1x, ../../static/img/portfolio/arbitration-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/arbitration-tablet.webp 1x, ../../static/img/portfolio/arbitration-tablet@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/arbitration-tablet.webp 1x, ../../static/img/portfolio/arbitration-tablet@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/arbitration-mobile.webp 1x, ../../static/img/portfolio/arbitration-mobile@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/arbitration-mobile.webp 1x, ../../static/img/portfolio/arbitration-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/arbitration-desktop.jpg 1x, ../../static/img/portfolio/arbitration-desktop@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/arbitration-desktop.jpg 1x, ../../static/img/portfolio/arbitration-desktop@2x.jpg 2x">
                   <source media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/arbitration-tablet.jpg 1x, ../../static/img/portfolio/arbitration-tablet@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/arbitration-tablet.jpg 1x, ../../static/img/portfolio/arbitration-tablet@2x.jpg 2x">
                   <source media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/arbitration-mobile.jpg 1x, ../../static/img/portfolio/arbitration-mobile@2x.jpg 2x">
-                  <img src="../../static/img/portfolio/arbitration-mobile.jpg" alt="Arbitration" class="portfolio__pic" width=""
-                       height="">
+                          data-srcset="../../static/img/portfolio/arbitration-mobile.jpg 1x, ../../static/img/portfolio/arbitration-mobile@2x.jpg 2x">
+                  <img data-src="../../static/img/portfolio/arbitration-mobile.jpg" alt="Arbitration" class="portfolio__pic lazyload">
                 </picture>
                 <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Arbitration"</figcaption>
               </figure>
@@ -372,18 +371,18 @@
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/yes-desktop.webp 1x, ../../static/img/portfolio/yes-desktop@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/yes-desktop.webp 1x, ../../static/img/portfolio/yes-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/yes-tablet.webp 1x, ../../static/img/portfolio/yes-tablet@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/yes-tablet.webp 1x, ../../static/img/portfolio/yes-tablet@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/yes-mobile.webp 1x, ../../static/img/portfolio/yes-mobile@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/yes-mobile.webp 1x, ../../static/img/portfolio/yes-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/yes-desktop.jpg 1x, ../../static/img/portfolio/yes-desktop@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/yes-desktop.jpg 1x, ../../static/img/portfolio/yes-desktop@2x.jpg 2x">
                   <source media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/yes-tablet.jpg 1x, ../../static/img/portfolio/yes-tablet@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/yes-tablet.jpg 1x, ../../static/img/portfolio/yes-tablet@2x.jpg 2x">
                   <source media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/yes-mobile.jpg 1x, ../../static/img/portfolio/yes-mobile@2x.jpg 2x">
-                  <img src="../../static/img/portfolio/yes-mobile.jpg" alt="Yes" class="portfolio__pic" width="" height="">
+                          data-srcset="../../static/img/portfolio/yes-mobile.jpg 1x, ../../static/img/portfolio/yes-mobile@2x.jpg 2x">
+                  <img data-src="../../static/img/portfolio/yes-mobile.jpg" alt="Yes" class="portfolio__pic lazyload">
                 </picture>
                 <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Yes"</figcaption>
               </figure>
@@ -399,18 +398,18 @@
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/cakes-desktop.webp 1x, ../../static/img/portfolio/cakes-desktop@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/cakes-desktop.webp 1x, ../../static/img/portfolio/cakes-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/cakes-tablet.webp 1x, ../../static/img/portfolio/cakes-tablet@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/cakes-tablet.webp 1x, ../../static/img/portfolio/cakes-tablet@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/cakes-mobile.webp 1x, ../../static/img/portfolio/cakes-mobile@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/cakes-mobile.webp 1x, ../../static/img/portfolio/cakes-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/cakes-desktop.jpg 1x, ../../static/img/portfolio/cakes-desktop@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/cakes-desktop.jpg 1x, ../../static/img/portfolio/cakes-desktop@2x.jpg 2x">
                   <source media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/cakes-tablet.jpg 1x, ../../static/img/portfolio/cakes-tablet@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/cakes-tablet.jpg 1x, ../../static/img/portfolio/cakes-tablet@2x.jpg 2x">
                   <source media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/cakes-mobile.jpg 1x, ../../static/img/portfolio/cakes-mobile@2x.jpg 2x">
-                  <img src="../../static/img/portfolio/cakes-mobile.jpg" alt="Cakes" class="portfolio__pic lazyload" width="" height="">
+                          data-srcset="../../static/img/portfolio/cakes-mobile.jpg 1x, ../../static/img/portfolio/cakes-mobile@2x.jpg 2x">
+                  <img data-src="../../static/img/portfolio/cakes-mobile.jpg" alt="Cakes" class="portfolio__pic lazyload">
                 </picture>
                 <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Pink"</figcaption>
               </figure>
@@ -425,18 +424,18 @@
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/mishka-desktop.webp 1x, ../../static/img/portfolio/mishka-desktop@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/mishka-desktop.webp 1x, ../../static/img/portfolio/mishka-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/mishka-tablet.webp 1x, ../../static/img/portfolio/mishka-tablet@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/mishka-tablet.webp 1x, ../../static/img/portfolio/mishka-tablet@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/mishka-mobile.webp 1x, ../../static/img/portfolio/mishka-mobile@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/mishka-mobile.webp 1x, ../../static/img/portfolio/mishka-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/mishka-desktop.jpg 1x, ../../static/img/portfolio/mishka-desktop@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/mishka-desktop.jpg 1x, ../../static/img/portfolio/mishka-desktop@2x.jpg 2x">
                   <source media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/mishka-tablet.jpg 1x, ../../static/img/portfolio/mishka-tablet@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/mishka-tablet.jpg 1x, ../../static/img/portfolio/mishka-tablet@2x.jpg 2x">
                   <source media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/mishka-mobile.jpg 1x, ../../static/img/portfolio/mishka-mobile@2x.jpg 2x">
-                  <img src="../../static/img/portfolio/mishka-mobile.jpg" alt="Mishka" class="portfolio__pic lazyload" width="" height="">
+                          data-srcset="../../static/img/portfolio/mishka-mobile.jpg 1x, ../../static/img/portfolio/mishka-mobile@2x.jpg 2x">
+                  <img data-src="../../static/img/portfolio/mishka-mobile.jpg" alt="Mishka" class="portfolio__pic lazyload">
                 </picture>
                 <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Mishka"</figcaption>
               </figure>
@@ -453,18 +452,18 @@
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/park-desktop.webp 1x, ../../static/img/portfolio/park-desktop@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/park-desktop.webp 1x, ../../static/img/portfolio/park-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/park-tablet.webp 1x, ../../static/img/portfolio/park-tablet@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/park-tablet.webp 1x, ../../static/img/portfolio/park-tablet@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/park-mobile.webp 1x, ../../static/img/portfolio/park-mobile@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/park-mobile.webp 1x, ../../static/img/portfolio/park-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/park-desktop.jpg 1x, ../../static/img/portfolio/park-desktop@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/park-desktop.jpg 1x, ../../static/img/portfolio/park-desktop@2x.jpg 2x">
                   <source media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/park-tablet.jpg 1x, ../../static/img/portfolio/park-tablet@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/park-tablet.jpg 1x, ../../static/img/portfolio/park-tablet@2x.jpg 2x">
                   <source media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/park-mobile.jpg 1x, ../../static/img/portfolio/park-mobile@2x.jpg 2x">
-                  <img src="../../static/img/portfolio/park-mobile.jpg" alt="Park" class="portfolio__pic lazyload" width="" height="">
+                          data-srcset="../../static/img/portfolio/park-mobile.jpg 1x, ../../static/img/portfolio/park-mobile@2x.jpg 2x">
+                  <img data-src="../../static/img/portfolio/park-mobile.jpg" alt="Park" class="portfolio__pic lazyload">
                 </picture>
                 <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Park"</figcaption>
               </figure>
@@ -481,18 +480,18 @@
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/pink-desktop.webp 1x, ../../static/img/portfolio/pink-desktop@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/pink-desktop.webp 1x, ../../static/img/portfolio/pink-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/pink-tablet.webp 1x, ../../static/img/portfolio/pink-tablet@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/pink-tablet.webp 1x, ../../static/img/portfolio/pink-tablet@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/pink-mobile.webp 1x, ../../static/img/portfolio/pink-mobile@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/pink-mobile.webp 1x, ../../static/img/portfolio/pink-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/pink-desktop.jpg 1x, ../../static/img/portfolio/pink-desktop@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/pink-desktop.jpg 1x, ../../static/img/portfolio/pink-desktop@2x.jpg 2x">
                   <source media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/pink-tablet.jpg 1x, ../../static/img/portfolio/pink-tablet@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/pink-tablet.jpg 1x, ../../static/img/portfolio/pink-tablet@2x.jpg 2x">
                   <source media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/pink-mobile.jpg 1x, ../../static/img/portfolio/pink-mobile@2x.jpg 2x">
-                  <img src="../../static/img/portfolio/pink-mobile.jpg" alt="Pink" class="portfolio__pic lazyload" width="" height="">
+                          data-srcset="../../static/img/portfolio/pink-mobile.jpg 1x, ../../static/img/portfolio/pink-mobile@2x.jpg 2x">
+                  <img data-src="../../static/img/portfolio/pink-mobile.jpg" alt="Pink" class="portfolio__pic lazyload">
                 </picture>
                 <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Pink"</figcaption>
               </figure>
@@ -510,18 +509,18 @@
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/accounting-desktop.webp 1x, ../../static/img/portfolio/accounting-desktop@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/accounting-desktop.webp 1x, ../../static/img/portfolio/accounting-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/accounting-tablet.webp 1x, ../../static/img/portfolio/accounting-tablet@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/accounting-tablet.webp 1x, ../../static/img/portfolio/accounting-tablet@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/accounting-mobile.webp 1x, ../../static/img/portfolio/accounting-mobile@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/accounting-mobile.webp 1x, ../../static/img/portfolio/accounting-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/accounting-desktop.jpg 1x, ../../static/img/portfolio/accounting-desktop@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/accounting-desktop.jpg 1x, ../../static/img/portfolio/accounting-desktop@2x.jpg 2x">
                   <source media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/accounting-tablet.jpg 1x, ../../static/img/portfolio/accounting-tablet@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/accounting-tablet.jpg 1x, ../../static/img/portfolio/accounting-tablet@2x.jpg 2x">
                   <source media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/accounting-mobile.jpg 1x, ../../static/img/portfolio/accounting-mobile@2x.jpg 2x">
-                  <img src="../../static/img/portfolio/accounting-mobile.jpg" alt="Accounting" class="portfolio__pic" width="" height="">
+                          data-srcset="../../static/img/portfolio/accounting-mobile.jpg 1x, ../../static/img/portfolio/accounting-mobile@2x.jpg 2x">
+                  <img data-src="../../static/img/portfolio/accounting-mobile.jpg" alt="Accounting" class="portfolio__pic lazyload">
                 </picture>
                 <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Accounting"</figcaption>
               </figure>
@@ -539,18 +538,18 @@
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/gllacy-desktop.webp 1x, ../../static/img/portfolio/gllacy-desktop@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/gllacy-desktop.webp 1x, ../../static/img/portfolio/gllacy-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/gllacy-tablet.webp 1x, ../../static/img/portfolio/gllacy-tablet@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/gllacy-tablet.webp 1x, ../../static/img/portfolio/gllacy-tablet@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/gllacy-mobile.webp 1x, ../../static/img/portfolio/gllacy-mobile@2x.webp 2x">
+                          data-srcset="../../static/img/portfolio/gllacy-mobile.webp 1x, ../../static/img/portfolio/gllacy-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                          srcset="../../static/img/portfolio/gllacy-desktop.jpg 1x, ../../static/img/portfolio/gllacy-desktop@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/gllacy-desktop.jpg 1x, ../../static/img/portfolio/gllacy-desktop@2x.jpg 2x">
                   <source media="(min-width: 992px)"
-                          srcset="../../static/img/portfolio/gllacy-tablet.jpg 1x, ../../static/img/portfolio/gllacy-tablet@2x.jpg 2x">
+                          data-srcset="../../static/img/portfolio/gllacy-tablet.jpg 1x, ../../static/img/portfolio/gllacy-tablet@2x.jpg 2x">
                   <source media="(min-width: 320px)"
-                          srcset="../../static/img/portfolio/gllacy-mobile.jpg 1x, ../../static/img/portfolio/gllacy-mobile@2x.jpg 2x">
-                  <img src="../../static/img/portfolio/gllacy-mobile.jpg" alt="Gllacy" class="portfolio__pic" width="" height="">
+                          data-srcset="../../static/img/portfolio/gllacy-mobile.jpg 1x, ../../static/img/portfolio/gllacy-mobile@2x.jpg 2x">
+                  <img data-src="../../static/img/portfolio/gllacy-mobile.jpg" alt="Gllacy" class="portfolio__pic lazyload">
                 </picture>
                 <figcaption class="portfolio__caption portfolio__caption--white">
                   {{ $t("portfolio.caption") }} "Gllacy"</figcaption>
