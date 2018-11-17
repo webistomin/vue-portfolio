@@ -17,7 +17,7 @@
     <div class="intro__column intro__column--padding">
       <h2 class="intro__title title">{{ $t("intro.title") }}</h2>
       <p class="intro__text">{{ $t("intro.text") }}</p>
-      <a href="#contacts" class="intro__link btn">{{ $t("intro.link") }}</a>
+      <a href="#contacts" class="intro__link btn" data-scroll>{{ $t("intro.link") }}</a>
     </div>
   </section>
 </template>

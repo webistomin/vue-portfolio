@@ -36,16 +36,16 @@
            role="navigation">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#about" class="main-nav__link">
+            <a href="#about" class="main-nav__link" data-scroll>
               {{ $t('mainNav.firstLink') }}
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#portfolio" class="main-nav__link">
+            <a href="#portfolio" class="main-nav__link" data-scroll>
               {{ $t('mainNav.secondLink') }}</a>
           </li>
           <li class="main-nav__item">
-            <a href="#contacts" class="main-nav__link">
+            <a href="#contacts" class="main-nav__link" data-scroll>
               {{ $t('mainNav.thirdLink') }}
             </a>
           </li>

@@ -43,12 +43,12 @@
               </router-link>
             </li>
             <li class="main-nav__item main-nav__item--blue">
-              <a href="#portfolio" class="main-nav__link main-nav__link--white">
+              <a href="#portfolio" class="main-nav__link main-nav__link--white" data-scroll>
                 {{ $t('mainNav.secondLink') }}
               </a>
             </li>
             <li class="main-nav__item main-nav__item--blue">
-              <a href="#contacts" class="main-nav__link main-nav__link--white">{{ $t('mainNav.thirdLink') }}</a></li>
+              <a href="#contacts" class="main-nav__link main-nav__link--white" data-scroll>{{ $t('mainNav.thirdLink') }}</a></li>
           </ul>
         </nav>
         <section class="socials socials--hidden">
