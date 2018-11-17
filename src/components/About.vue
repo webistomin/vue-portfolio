@@ -7,8 +7,9 @@
       <li class="about__item">HTML 5</li>
       <li class="about__item">CSS 3</li>
       <li class="about__item">JavaScript (ES5, ES6+)</li>
-      <li class="about__item">Vue.js (Vuex, Vue Router, Vuetify)</li>
-      <li class="about__item">LESS</li>
+      <li class="about__item">Vue.js (Vuex, Vue Router, Vuetify, vue-i18n)</li>
+      <li class="about__item">Nuxt.js, SSR</li>
+      <li class="about__item">LESS/SASS</li>
       <li class="about__item">Git</li>
       <li class="about__item">Gulp, Webpack</li>
       <li class="about__item">JQuery plugins</li>

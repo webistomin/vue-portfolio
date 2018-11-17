@@ -260,6 +260,70 @@
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
+                          data-srcset="../../static/img/portfolio/blog-desktop.webp 1x,
+                    ../../static/img/portfolio/blog-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 992px)"
+                          data-srcset="../../static/img/portfolio/blog-tablet.webp 1x,
+                    ../../static/img/portfolio/blog-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)"
+                          data-srcset="../../static/img/portfolio/blog-mobile.webp 1x,
+                    ../../static/img/portfolio/blog-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                          data-srcset="../../static/img/portfolio/blog-desktop.jpg 1x,
+                    ../../static/img/portfolio/blog-desktop@2x.jpg 2x">
+                  <source media="(min-width: 992px)"
+                          data-srcset="../../static/img/portfolio/blog-tablet.jpg 1x,
+                    ../../static/img/portfolio/blog-tablet@2x.jpg 2x">
+                  <source media="(min-width: 320px)"
+                          data-srcset="../../static/img/portfolio/blog-mobile.jpg 1x,
+                    ../../static/img/portfolio/blog-mobile@2x.jpg 2x">
+                  <img data-src="../../static/img/portfolio/blog-mobile.jpg" alt="SSR Blog" class="portfolio__pic lazyload">
+                </picture>
+                <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "SSR Blog"</figcaption>
+              </figure>
+              <div class="portfolio__buttons">
+                <a href="https://nuxt-blog-85622.firebaseapp.com/"
+                   class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
+                  {{ $t("portfolio.firstBtn") }}</a>
+                <a href="https://github.com/webistomin/nuxtjs-app" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">{{ $t("portfolio.secondBtn") }}</a>
+              </div>
+            </li>
+            <li class="portfolio__item portfolio__item--margin" tabindex="0">
+              <figure class="portfolio__figure">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                          data-srcset="../../static/img/portfolio/dhrubok-desktop.webp 1x,
+                    ../../static/img/portfolio/dhrubok-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 992px)"
+                          data-srcset="../../static/img/portfolio/dhrubok-tablet.webp 1x,
+                    ../../static/img/portfolio/dhrubok-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)"
+                          data-srcset="../../static/img/portfolio/dhrubok-mobile.webp 1x,
+                    ../../static/img/portfolio/dhrubok-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                          data-srcset="../../static/img/portfolio/dhrubok-desktop.jpg 1x,
+                    ../../static/img/portfolio/dhrubok-desktop@2x.jpg 2x">
+                  <source media="(min-width: 992px)"
+                          data-srcset="../../static/img/portfolio/dhrubok-tablet.jpg 1x,
+                    ../../static/img/portfolio/dhrubok-tablet@2x.jpg 2x">
+                  <source media="(min-width: 320px)"
+                          data-srcset="../../static/img/portfolio/dhrubok-mobile.jpg 1x,
+                    ../../static/img/portfolio/dhrubok-mobile@2x.jpg 2x">
+                  <img data-src="../../static/img/portfolio/dhrubok-mobile.jpg" alt="dhrubok" class="portfolio__pic lazyload">
+                </picture>
+                <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Dhrubok"</figcaption>
+              </figure>
+              <div class="portfolio__buttons">
+                <a href="https://webistomin.github.io/ggpa-test-task/"
+                   class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
+                  {{ $t("portfolio.firstBtn") }}</a>
+                <a href="https://github.com/webistomin/ggpa-test-task" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">{{ $t("portfolio.secondBtn") }}</a>
+              </div>
+            </li>
+            <li class="portfolio__item" tabindex="0">
+              <figure class="portfolio__figure">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
                           data-srcset="../../static/img/portfolio/table-desktop.webp 1x, ../../static/img/portfolio/table-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 992px)"
                           data-srcset="../../static/img/portfolio/table-tablet.webp 1x, ../../static/img/portfolio/table-tablet@2x.webp 2x">

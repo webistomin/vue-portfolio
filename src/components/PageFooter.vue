@@ -56,19 +56,19 @@
           </div>
           <div class="contacts__info">
             <span class="contacts__desc">{{ $t('pageFooter.secondInfo') }}</span>
-            <a href="https://join.skype.com/invite/n0pX9fuy7svc"
+            <a href="skype:live:49e0fc42cb1a2f1c?call"
                class="contacts__link" target="_blank"
-            rel="noopener noreferrer">+79996135062</a>
+            rel="noopener noreferrer">live:49e0fc42cb1a2f1c</a>
           </div>
           <div class="contacts__info">
             <span class="contacts__desc">{{ $t('pageFooter.thirdInfo') }}</span>
-            <a href="https://hh.ru/resume/836ce1d3ff057cecc70039ed1f566a68623142"
+            <a href="https://hh.ru/resume/c9e34aa2ff05e9e6730039ed1f31514c637330"
                class="contacts__link" target="_blank" rel="noopener noreferrer"
                title="HeadHunter">{{ $t('pageFooter.name') }} (hh.ru)</a>
           </div>
         </div>
         <div class="contacts__column contacts__column--margin">
-          <form action="#" method="get" class="contacts__field">
+          <form action="" method="get" class="contacts__field">
             <h4 class="contacts__title contacts__title--small title">
             {{ $t('pageFooter.secondTitle') }}
             </h4>
@@ -183,7 +183,7 @@
 
         // eslint-disable-next-line max-len
         // Parameters to send to PHP script. The bits in the "quotes" are the POST indexes to be sent to the PHP script.
-        const params = `Name=${name}&email=${email}&message=${message}`;
+        const params = `name=${name}&email=${email}&message=${message}`;
 
         const http = new XMLHttpRequest();
         http.open('POST', 'send.php', true);
