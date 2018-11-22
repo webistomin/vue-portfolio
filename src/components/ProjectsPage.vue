@@ -324,6 +324,33 @@
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
+                          data-srcset="../../static/img/portfolio/poll-desktop.webp 1x, ../../static/img/portfolio/poll-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 992px)"
+                          data-srcset="../../static/img/portfolio/poll-tablet.webp 1x, ../../static/img/portfolio/poll-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)"
+                          data-srcset="../../static/img/portfolio/poll-mobile.webp 1x, ../../static/img/portfolio/poll-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                          data-srcset="../../static/img/portfolio/poll-desktop.jpg 1x, ../../static/img/portfolio/poll-desktop@2x.jpg 2x">
+                  <source media="(min-width: 992px)"
+                          data-srcset="../../static/img/portfolio/poll-tablet.jpg 1x, ../../static/img/portfolio/poll-tablet@2x.jpg 2x">
+                  <source media="(min-width: 320px)"
+                          data-srcset="../../static/img/portfolio/poll-mobile.jpg 1x, ../../static/img/portfolio/poll-mobile@2x.jpg 2x">
+                  <img data-src="../../static/img/portfolio/table-mobile.jpg" alt="Aviasales Poll" class="portfolio__pic lazyload">
+                </picture>
+                <figcaption class="portfolio__caption portfolio__caption--white">{{ $t("portfolio.caption") }} "Aviasales Poll"</figcaption>
+              </figure>
+              <div class="portfolio__buttons">
+                <a href="https://poll-aaff7.firebaseapp.com"
+                   class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
+                  {{ $t("portfolio.firstBtn") }}</a>
+                <a href="https://github.com/webistomin/marketing-test" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">
+                  {{ $t("portfolio.secondBtn") }}</a>
+              </div>
+            </li>
+            <li class="portfolio__item portfolio__item--margin" tabindex="0">
+              <figure class="portfolio__figure">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
                           data-srcset="../../static/img/portfolio/table-desktop.webp 1x, ../../static/img/portfolio/table-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 992px)"
                           data-srcset="../../static/img/portfolio/table-tablet.webp 1x, ../../static/img/portfolio/table-tablet@2x.webp 2x">
@@ -347,7 +374,7 @@
                   {{ $t("portfolio.secondBtn") }}</a>
               </div>
             </li>
-            <li class="portfolio__item portfolio__item--margin" tabindex="0">
+            <li class="portfolio__item" tabindex="0">
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
@@ -380,7 +407,7 @@
                 <a href="https://github.com/webistomin/brume-adaptive" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">{{ $t("portfolio.secondBtn") }}</a>
               </div>
             </li>
-            <li class="portfolio__item" tabindex="0">
+            <li class="portfolio__item portfolio__item--margin" tabindex="0">
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
@@ -403,7 +430,7 @@
                 <a href="https://webistomin.github.io/cat-energy/" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">{{ $t("portfolio.firstBtn") }}</a>
                 <a href="https://github.com/webistomin/cat-energy" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">{{ $t("portfolio.secondBtn") }}</a></div>
             </li>
-            <li class="portfolio__item portfolio__item--margin" tabindex="0">
+            <li class="portfolio__item" tabindex="0">
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
@@ -431,7 +458,7 @@
                 </a>
               </div>
             </li>
-            <li class="portfolio__item" tabindex="0">
+            <li class="portfolio__item portfolio__item--margin" tabindex="0">
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
@@ -458,7 +485,7 @@
                 </a>
               </div>
             </li>
-            <li class="portfolio__item portfolio__item--margin" tabindex="0">
+            <li class="portfolio__item" tabindex="0">
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
@@ -484,7 +511,7 @@
                 </a>
               </div>
             </li>
-            <li class="portfolio__item" tabindex="0">
+            <li class="portfolio__item portfolio__item--margin" tabindex="0">
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
@@ -512,7 +539,7 @@
                 </a>
               </div>
             </li>
-            <li class="portfolio__item portfolio__item--margin" tabindex="0">
+            <li class="portfolio__item" tabindex="0">
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
@@ -540,7 +567,7 @@
                 </a>
               </div>
             </li>
-            <li class="portfolio__item" tabindex="0">
+            <li class="portfolio__item portfolio__item--margin" tabindex="0">
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
@@ -569,7 +596,7 @@
                 </a>
               </div>
             </li>
-            <li class="portfolio__item portfolio__item--margin" tabindex="0">
+            <li class="portfolio__item" tabindex="0">
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
@@ -598,7 +625,7 @@
                 </a>
               </div>
             </li>
-            <li class="portfolio__item" tabindex="0">
+            <li class="portfolio__item portfolio__item--margin" tabindex="0">
               <figure class="portfolio__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
