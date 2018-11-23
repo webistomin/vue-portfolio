@@ -68,7 +68,7 @@
           </div>
         </div>
         <div class="contacts__column contacts__column--margin">
-          <form action="" method="get" class="contacts__field">
+          <form action="https://formcarry.com/s/-WRDpzuUOMx" method="POST" class="contacts__field" accept-charset="UTF-8" @submit.prevent="submitForm">
             <h4 class="contacts__title contacts__title--small title">
             {{ $t('pageFooter.secondTitle') }}
             </h4>
@@ -104,6 +104,7 @@
               <span class="highlight"></span>
               <span class="bar"></span>
               <label for="message">{{ $t('pageFooter.thirdLabel') }}</label></div>
+              <input type="hidden" name="_gotcha">
               <button class="contacts__btn btn" id="contact-submit"
                       type="submit" ref="submitBtn">
               <span class="contacts__btn-text" id="btn-text" ref="btnText">
@@ -128,6 +129,8 @@
 </template>
 
 <script>
+  import axios from 'axios';
+
   export default {
     data() {
       return {
@@ -156,71 +159,32 @@
       }
 
       setInterval(setTime, 1000);
-
-      const nameInput = this.$refs.inputName;
-      const emailInput = this.$refs.inputEmail;
-      const messageInput = this.$refs.inputMessage;
-      const send = this.$refs.submitBtn;
-      const btnText = this.$refs.btnText;
-      const plane = this.$refs.planeBtn;
-      const planeAbsolute = this.$refs.planeBtnAbsolute;
-
-      send.onclick = () => {
-        if (nameInput.validity.valid && emailInput.validity.valid && messageInput.validity.valid) {
-          planeAbsolute.classList.remove('contacts__icon--hidden');
-          planeAbsolute.classList.add('contacts__icon--visible');
-          planeAbsolute.classList.add('fly');
-          btnText.classList.add('fade');
-          btnText.innerHTML = this.$locale === 'ru' ? 'Отправлено' : 'Sent';
-          plane.innerHTML = '<use x="0" y="0" xlink:href="#icon-check"></use>';
-        }
-      };
-
-      function postData(formSubmission) {
-        const name = encodeURIComponent(this.name);
-        const email = encodeURIComponent(this.email);
-        const message = encodeURIComponent(this.message);
-
-        // eslint-disable-next-line max-len
-        // Parameters to send to PHP script. The bits in the "quotes" are the POST indexes to be sent to the PHP script.
-        const params = `name=${name}&email=${email}&message=${message}`;
-
-        const http = new XMLHttpRequest();
-        http.open('POST', 'send.php', true);
-
-        // Set headers
-        http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-        http.send(params);
-        formSubmission.preventDefault();
-        this.name = '';
-        this.email = '';
-        this.message = '';
-      }
-
-      document.addEventListener('DOMContentLoaded', () => {
-        document.querySelector('.contacts__field').addEventListener('submit', postData);
-      });
     },
-    updated() {
-      const minutesLabel = document.getElementById('minutes');
-      const secondsLabel = document.getElementById('seconds');
-      let totalSeconds = 0;
+    methods: {
+      submitForm() {
+        const nameInput = this.$refs.inputName;
+        const emailInput = this.$refs.inputEmail;
+        const messageInput = this.$refs.inputMessage;
+        const btnText = this.$refs.btnText;
+        const plane = this.$refs.planeBtn;
+        const planeAbsolute = this.$refs.planeBtnAbsolute;
 
-      function pad(val) {
-        const valString = `${val}`;
-        if (valString.length < 2) {
-          return `0${valString}`;
-        }
-        return valString;
-      }
-
-      function setTime() {
-        totalSeconds += 1;
-        secondsLabel.innerHTML = pad(totalSeconds % 60);
-        minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60, 10));
-      }
-
-      setInterval(setTime, 1000);
+        axios.post('https://formcarry.com/s/-WRDpzuUOMx', { name: nameInput.value, email: emailInput.value, message: messageInput.value }, { headers: { Accept: 'application/json' } })
+          .then(() => {
+            planeAbsolute.classList.remove('contacts__icon--hidden');
+            planeAbsolute.classList.add('contacts__icon--visible');
+            planeAbsolute.classList.add('fly');
+            btnText.classList.add('fade');
+            btnText.innerHTML = this.$locale === 'ru' ? 'Отправлено' : 'Sent';
+            plane.innerHTML = '<use x="0" y="0" xlink:href="#icon-check"></use>';
+            nameInput.value = '';
+            emailInput.value = '';
+            messageInput.value = '';
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      },
     },
     name: 'PageFooter',
   };
