@@ -1,6 +1,6 @@
 <template lang="pug">
   AppContent
-    h1 {{ $t('about.title') }}
+    h1
 </template>
 
 <script>

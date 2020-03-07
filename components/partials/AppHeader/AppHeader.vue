@@ -4,11 +4,13 @@
       .page-header__links
         nuxt-link.page-header__link.page-header__link_ru(
           title='Russian version'
-          to='/ru'
+          :class='{"page-header__link_active" : $store.state.locale === "ru"}'
+          to='/'
           ) RU
         span /
         nuxt-link.page-header__link.page-header__link_en(
           title='English version'
+          :class='{"page-header__link_active" : $store.state.locale === "en"}'
           to='/en'
           ) EN
       .page-header__logotype

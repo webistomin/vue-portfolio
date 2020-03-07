@@ -32,9 +32,13 @@
       background-image: none
       background-color: $color-main
 
-  +media($screen-xl)
+  +media($screen-xxl)
     &::before
-      width: 590px
+      width: 490px
+
+  +media($screen-xxxl)
+    &::before
+      width: 490px
 
   +e('logo')
     margin: 0
@@ -157,7 +161,7 @@
       width: 100px
 
   +e('inner')
-    padding: 10px 2.604166667%
+    padding: 10px 5%
     position: relative
     display: flex
     justify-content: space-between

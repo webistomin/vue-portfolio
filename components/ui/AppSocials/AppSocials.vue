@@ -12,7 +12,7 @@
             width='30'
             height='30'
             name='icon-telegram'
-          )
+          ).socials__icon.socials__icon_white.socials__icon_rotate
       li.socials__item.socials__item_square
         a.socials__link(
           href='https://vk.com/webistomin'
@@ -24,7 +24,7 @@
             width='30'
             height='30'
             name='icon-vk'
-          ).socials__icon
+          ).socials__icon.socials__icon_white.socials__icon_rotate
       li.socials__item.socials__item_square
         a.socials__link(
           href='https://www.linkedin.com/in/webistomin/'
@@ -36,7 +36,7 @@
             width='30'
             height='30'
             name='icon-linkedin'
-          )
+          ).socials__icon.socials__icon_white.socials__icon_rotate
 </template>
 
 <script>

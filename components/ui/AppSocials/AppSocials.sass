@@ -7,7 +7,7 @@
   +m('hidden')
     display: none
 
-    +media($screen-lg)
+    +media($screen-xl)
       display: block
       margin: 0
 
@@ -31,7 +31,7 @@
       display: flex
       justify-content: center
       align-items: center
-      outline-color: $color-main
+      outline-color: $color-white
 
   +e('item')
     margin-right: 25px
@@ -61,7 +61,6 @@
 
   +e('icon')
     vertical-align: top
-    fill: $color-grey
 
     &:hover
       fill: $color-main
@@ -69,9 +68,14 @@
     +m('blue')
       fill: $color-main
 
+    +m('white')
+      fill: $color-white
+
+      &:hover
+        fill: $color-white
+
     +media($screen-md)
       +m('rotate')
-        fill: $color-white
         transform: rotate(-45deg)
 
       +m('blue')
