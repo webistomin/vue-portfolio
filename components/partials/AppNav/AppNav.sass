@@ -1,0 +1,101 @@
+.main-nav
+  position: absolute
+  top: 100%
+  left: 0
+  z-index: 10
+  width: 100%
+
+  +m('closed')
+    transform: scaleY(0)
+    transform-origin: top
+    transition: transform 0.3s ease-in-out
+
+  +m('opened')
+    transform-origin: top
+    transform: scaleY(1)
+    transition: transform 0.3s ease-in-out
+
+  +media($screen-sm)
+    top: 72px
+
+  +media($screen-md)
+    +m('closed')
+      transform: none
+      transform-origin: initial
+      position: relative
+      width: auto
+      top: initial
+      left: initial
+
+  +e('item')
+    text-align: center
+    background-color: $color-white
+
+    &:hover
+      background-color: $color-text
+
+    +media($screen-md)
+      border: 1px solid $color-white
+
+      &:hover
+        border-color: $color-main
+        background-color: $color-white
+        box-shadow: 4px 3px 0 0 rgba(0, 0, 255, 1)
+        z-index: 10
+
+      &:active
+        transform: translateX(4px) translateY(3px)
+        box-shadow: none
+
+      +m('blue')
+        border: none
+        background-color: transparent
+
+        &:hover
+          border-color: $color-white
+          background-color: $color-white
+          box-shadow: 4px 3px 0 0 rgba($color-white, 0.5)
+          z-index: 10
+
+    +media($screen-xl)
+      margin-right: 20px
+
+      &:last-child
+        margin-right: 0
+
+  +e('link')
+    display: block
+    padding: 22px 0 21px 0
+    font-size: 0.8125em
+    text-transform: uppercase
+    letter-spacing: 0.25em
+    color: $color-text
+    user-select: none
+
+    &:hover
+      color: $color-white
+
+    +media($screen-md)
+      padding: 7px 15px
+
+      &:hover
+        color: #2f00fb
+
+      &:focus
+        color: #2f00fb
+        outline: thin dotted
+
+      +m('white')
+        color: $color-white
+
+        &:hover
+          color: $color-white
+
+    +media($screen-lg)
+      font-size: 1em
+      padding: 14px 30px
+
+  +e('list')
+    +media($screen-md)
+      display: flex
+

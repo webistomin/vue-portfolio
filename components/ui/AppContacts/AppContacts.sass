@@ -1,0 +1,62 @@
++b('contacts')
+  padding-top: 40px
+
+  +e('title')
+    text-align: center
+    margin-bottom: 30px
+
+    +m('small')
+      color: #ffffff
+      font-size: 20px
+
+      &::selection
+        background-color: #ffffff
+        color: #1d1d1d
+
+    +media($screen-md)
+      text-align: left
+
+  +e('info')
+    display: flex
+    flex-direction: column
+    margin-bottom: 40px
+
+    &:last-child
+      margin-bottom: 0
+
+  +e('desc')
+    font-family: 'Oswald', sans-serif
+    font-style: normal
+    font-weight: 700
+    color: $color-grey
+    font-size: 20px
+    text-transform: uppercase
+
+  +e('link')
+    font-size: 17px
+    color: $color-text
+    font-family: 'Raleway', sans-serif
+    font-style: normal
+    font-weight: 400
+
+    &:hover
+      text-decoration: underline
+
+  +e('text')
+    font-size: 17px
+    line-height: 24px
+    text-align: justify
+    color: #ffffff
+    font-family: 'Raleway', sans-serif
+    font-style: normal
+    font-weight: 400
+    margin-bottom: 40px
+
+    &::selection
+      background-color: #ffffff
+      color: #1d1d1d
+
+    & span
+      &::selection
+        background-color: #ffffff
+        color: #1d1d1d

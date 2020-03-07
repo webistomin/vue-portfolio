@@ -1,0 +1,176 @@
++b('intro')
+  margin-top: 20px
+
+  +media($screen-lg)
+    margin-top: auto
+    margin-bottom: auto
+
+  +e('figure')
+    position: relative
+    margin: 0 0 20px
+    text-align: center
+
+    +media($screen-lg)
+      margin-bottom: 0
+
+  +e('column')
+    +m('margin')
+      max-width: 300px
+      margin: 0 auto
+
+    +media($screen-lg)
+      margin-left: 40px
+
+      +m('margin')
+        max-width: 500px
+        margin: 0 0 0 125px
+        flex-shrink: 0
+
+      +m('padding')
+        padding-top: 110px
+
+    +media($screen-xxl)
+      +m('margin')
+        margin-left: 90px
+
+  +e('img')
+    vertical-align: top
+    margin: 0 auto
+
+  +e('caption')
+    width: 300px
+    text-align: center
+    display: none
+    position: absolute
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    background-color: $color-white
+    padding: 20px 0
+    bottom: 0
+
+    +media($screen-lg)
+      display: block
+      left: -80px
+      bottom: 30px
+
+
+  +e('title')
+    margin-bottom: 10px
+    background-color: $color-white
+    color: $color-text
+    text-align: center
+
+    +media($screen-lg)
+      text-align: left
+      display: inline-block
+
+  +e('text')
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    background-color: $color-white
+    line-height: 24px
+    color: $color-text
+    margin-bottom: 28px
+    text-align: center
+    padding: 0 20px
+
+    +media($screen-sm)
+      font-size: 20px
+      line-height: 30px
+
+    +media($screen-lg)
+      padding: 0
+      text-align: left
+      margin-bottom: 25px
+      max-width: 500px
+
+  +e('link')
+    margin: 0 auto
+    position: relative
+    background-color: transparent
+    color: $color-main
+    border: 2px solid $color-main
+    transition: all 0.3s
+    overflow: hidden
+    user-select: none
+
+    &:active
+      transform: scale(0.8)
+      transition: all 0.3s
+
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background-color: $color-main
+      transform: translateX(-100%)
+      transition: 0.3s ease-in-out
+      z-index: -1
+
+    &:hover,
+    &:focus
+      color: $color-white
+      &::before
+        transform: translateX(0)
+
+    +media($screen-lg)
+      position: relative
+      margin: 0
+      background-color: $color-white
+      color: $color-main
+
+      &::before,
+      &::after
+        position: absolute
+        top: 50%
+        content: ''
+        width: 20px
+        height: 20px
+        background-color: $color-main
+        border-radius: 50%
+        box-sizing: border-box
+        transition: 0.6s ease-in-out
+
+      &::before
+        left: -20px
+        transform: translate(-50%, -50%)
+
+      &::after
+        right: -20px
+        transform: translate(50%, -50%)
+
+      &:hover,
+      &:focus
+        color: $color-white
+        background-color: transparent
+
+      &:hover::before,
+      &:focus::before
+        animation: criss-cross-left 0.6s both
+        animation-direction: alternate
+        z-index: -1
+
+      &:hover::after,
+      &:focus::after
+        animation: criss-cross-right 0.6s both
+        animation-direction: alternate
+        z-index: -1
+
+  +e('container')
+    +media($screen-lg)
+      display: flex
+      align-items: center
+      z-index: 2
+      position: relative
+
+  +e('hand')
+    display: inline-block
+    transform-origin: 100% 100%
+
+    &:hover
+      animation: wave 350ms ease-in-out infinite alternate

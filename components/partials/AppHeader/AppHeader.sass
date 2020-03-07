@@ -1,0 +1,249 @@
++b('page-header')
+  position: relative
+  flex-shrink: 0
+  display: flex
+  flex-direction: column
+
+  +m('blue')
+    background-image: none
+
+  +media($screen-md)
+    background-image: url("/img/pattern.png")
+    background-repeat: repeat
+    background-position: center
+
+    +retina()
+      background-image: url("/img/pattern@2x.png")
+      background-size: 64px 120px
+
+    +m('blue')
+      background-image: none
+      background-color: $color-main
+
+  +media($screen-lg)
+    min-height: 100vh
+
+  +e('logo')
+    margin: 0
+    font-family: $font-family-second
+    font-style: normal
+    font-weight: 700
+    text-transform: uppercase
+    color: $color-white
+    font-size: 25px
+    line-height: initial
+    text-align: center
+
+    &::selection
+      background-color: $color-white
+      color: $color-text
+
+    +media($screen-sm)
+      font-size: 30px
+
+    +media($screen-md)
+      font-size: 64px
+
+  +e('home')
+    outline: none
+
+  +e('desc')
+    display: block
+    margin-top: -5px
+    font-size: 8px
+    color: $color-white
+    font-style: normal
+    text-transform: uppercase
+    letter-spacing: 1px
+
+    &::selection
+      background-color: $color-white
+      color: $color-text
+
+    +media($screen-sm)
+      margin-top: -4px
+      font-size: 10px
+
+    +media($screen-md)
+      margin-top: -8px
+      font-size: 12px
+
+  +e('link')
+    outline: none
+    border: none
+    padding: 0
+    position: relative
+    font-family: $font-family-second
+    font-size: 0.8125em
+    text-transform: uppercase
+    letter-spacing: 0.25em
+    color: $color-white
+    background-color: transparent
+
+    +m('active')
+      &::before
+        content: ""
+        width: 100%
+        height: 2px
+        position: absolute
+        bottom: -2px
+        left: -1px
+        background-color: $color-white
+
+    +media($screen-sm)
+      padding: 10px 0
+
+      +m('projects')
+        padding: 0 10px
+
+    +media($screen-md)
+      display: block
+      width: 30px
+      height: 20px
+      box-sizing: border-box
+      transition: all 0.1s ease-in-out
+
+      &:hover
+        transform: scale(1.1)
+        transition: all 0.1s ease-in-out
+
+      &:active
+        transform: scale(0.9)
+        transition: all 0.1s ease-in-out
+
+      +m('active')
+        &::before
+          bottom: -8px
+
+      +m('ru')
+        background-image: linear-gradient(-180deg, white 33.3%, mediumblue 33.3%, mediumblue 66.6%, red 66.6%)
+
+      +m('en')
+        background-image: linear-gradient(90deg, transparent 46%, red 46%, red 56%, transparent 56%), linear-gradient(transparent 38%, white 38%, white 42%, red 42%, red 58%, white 58%, white 62%, transparent 62%), linear-gradient(90deg, transparent 44%, white 44%, white 46%, red 46%, red 56%, white 56%, white 58%, transparent 58%), linear-gradient(33deg, transparent 45%, white 45%, white 48%, red 48%, red 54%, white 54%, white 57%, transparent 57%), linear-gradient(-33deg, mediumblue 45%, white 45%, white 48%, red 48%, red 54%, white 54%, white 57%, mediumblue 57%)
+
+    +media($screen-lg)
+      width: 40px
+      height: 25px
+
+  +e('links')
+    color: $color-white
+
+    +media($screen-md)
+      display: flex
+      width: 70px
+      justify-content: space-between
+      z-index: 3
+      position: absolute
+      bottom: -40px
+      font-size: 0
+
+      +m('high')
+        bottom: 50px
+
+    +media($screen-lg)
+      width: 100px
+
+  +e('inner')
+    padding: 10px 5%
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &::before
+      display: block
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: $color-main
+      z-index: -1
+
+    +m('blue')
+      background-color: $color-main
+
+    +media($screen-md)
+      justify-content: space-between
+      align-items: center
+      background-color: $color-white
+
+      &::before
+        width: 320px
+        height: 100%
+        z-index: 1
+
+      +m('blue')
+        padding-bottom: 100px
+        background-image: none
+        background-color: $color-main
+
+    +media($screen-lg)
+      &::before
+        min-height: 100vh
+
+    +media($screen-xl)
+      padding-top: 20px
+      padding-bottom: 20px
+
+      +m('blue')
+        padding-bottom: 100px
+
+    +media($screen-xxl)
+      &::before
+        width: 490px
+
+    +media($screen-xxxl)
+      &::before
+        width: 490px
+
+  +e('toggle')
+    box-sizing: border-box
+    font-size: 0
+    background-color: transparent
+    border: none
+    width: 40px
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    outline: none
+
+    +m('opened')
+      .page-header__line
+        &:nth-of-type(1)
+          transform: rotate(45deg) translate(8px, 7px)
+
+        &:nth-of-type(2)
+          visibility: hidden
+
+        &:nth-of-type(3)
+          transform: rotate(-45deg) translate(8px, -8px)
+
+    +media($screen-md)
+      display: none
+
+  +e('line')
+    display: block
+    height: 1px
+    width: 45px
+    background: $color-white
+    margin: 5px auto
+    transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+
+  +e('logotype')
+    +media($screen-sm)
+      +m('padding')
+        padding-right: 50px
+
+    +media($screen-md)
+      margin-right: 25px
+      z-index: 2
+
+      +m('padding')
+        margin-right: 0
+        padding-right: 0
+

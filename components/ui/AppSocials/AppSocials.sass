@@ -1,0 +1,85 @@
++b('socials')
+  margin-bottom: 40px
+
+  +media($screen-lg)
+    margin-left: auto
+
+  +m('hidden')
+    display: none
+
+    +media($screen-xl)
+      display: block
+      margin: 0
+
+  +e('list')
+    display: flex
+    justify-content: center
+    align-items: flex-end
+
+    +media($screen-md)
+      justify-content: flex-start
+
+      +m('justify')
+        width: 210px
+        justify-content: space-between
+
+  +e('link')
+    display: block
+
+    +media($screen-md)
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      outline-color: $color-white
+
+  +e('item')
+    margin-right: 25px
+
+    &:last-child
+      margin-right: 0
+
+    +media($screen-md)
+      +m('square')
+        width: 50px
+        height: 50px
+        background-color: $color-main
+        transform: rotate(45deg)
+
+        &:hover,
+        &:focus
+          animation: rescale 0.25s ease
+
+        &:hover .socials__icon_rotate
+          fill: $color-white
+
+        &:hover .socials__icon_blue
+          fill: $color-main
+
+      +m('white')
+        background-color: #ffffff
+
+  +e('icon')
+    vertical-align: top
+
+    &:hover
+      fill: $color-main
+
+    +m('blue')
+      fill: $color-main
+
+    +m('white')
+      fill: $color-white
+
+      &:hover
+        fill: $color-white
+
+    +media($screen-md)
+      +m('rotate')
+        transform: rotate(-45deg)
+
+      +m('blue')
+        fill: $color-main
+
+        &:hover
+          fill: $color-main

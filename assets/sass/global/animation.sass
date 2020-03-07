@@ -1,0 +1,70 @@
+.fade-enter
+  opacity: 0
+
+.fade-enter-active
+  transition: opacity 0.3s ease
+
+.fade-leave-active
+  transition: opacity 0.3s ease
+  opacity: 0
+
+@keyframes rescale
+  0%
+    transform: rotate(0deg)
+  10%
+    transform: rotate(36deg)
+  20%
+    transform: rotate(72deg)
+  30%
+    transform: rotate(108deg)
+  40%
+    transform: rotate(144deg)
+  50%
+    transform: rotate(180deg)
+  60%
+    transform: rotate(216deg)
+  70%
+    transform: rotate(252deg)
+  80%
+    transform: rotate(288deg)
+  90%
+    transform: rotate(334deg)
+  100%
+    transform: rotate(360deg)
+
+@keyframes criss-cross-left
+  0%
+    left: -20px
+
+  50%
+    left: 50%
+    width: 20px
+    height: 20px
+
+  100%
+    left: 50%
+    width: 375px
+    height: 375px
+
+
+@keyframes criss-cross-right
+  0%
+    right: -20px
+
+  50%
+    right: 50%
+    width: 20px
+    height: 20px
+
+  100%
+    right: 50%
+    width: 375px
+    height: 375px
+
+@keyframes wave
+  0%
+    transform: rotate(15deg)
+  100%
+    transform: rotate(-10deg)
+
+
