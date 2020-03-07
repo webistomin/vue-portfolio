@@ -1,28 +1,16 @@
 +b('page-header')
   position: relative
   flex-shrink: 0
+  display: flex
+  flex-direction: column
 
   +m('blue')
     background-image: none
 
-  &::before
-    display: block
-    content: ''
-    position: absolute
-    top: 0
-    width: 100%
-    height: 100%
-    background-color: $color-main
-    z-index: -1
-
   +media($screen-md)
     background-image: url("/img/pattern.png")
     background-repeat: repeat
-
-    &::before
-      width: 320px
-      height: 100%
-      z-index: 1
+    background-position: center
 
     +retina()
       background-image: url("/img/pattern@2x.png")
@@ -32,13 +20,8 @@
       background-image: none
       background-color: $color-main
 
-  +media($screen-xxl)
-    &::before
-      width: 490px
-
-  +media($screen-xxxl)
-    &::before
-      width: 490px
+  +media($screen-lg)
+    min-height: 100vh
 
   +e('logo')
     margin: 0
@@ -167,6 +150,17 @@
     justify-content: space-between
     align-items: center
 
+    &::before
+      display: block
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: $color-main
+      z-index: -1
+
     +m('blue')
       background-color: $color-main
 
@@ -175,10 +169,19 @@
       align-items: center
       background-color: $color-white
 
+      &::before
+        width: 320px
+        height: 100%
+        z-index: 1
+
       +m('blue')
         padding-bottom: 100px
         background-image: none
         background-color: $color-main
+
+    +media($screen-lg)
+      &::before
+        min-height: 100vh
 
     +media($screen-xl)
       padding-top: 20px
@@ -186,6 +189,14 @@
 
       +m('blue')
         padding-bottom: 100px
+
+    +media($screen-xxl)
+      &::before
+        width: 490px
+
+    +media($screen-xxxl)
+      &::before
+        width: 490px
 
   +e('toggle')
     box-sizing: border-box

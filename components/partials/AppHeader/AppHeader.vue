@@ -28,15 +28,17 @@
         span.page-header__line
       AppNav(:isNavOpened='isOpened')
       AppSocials
+    AppIntro
 </template>
 
 <script>
   import AppNav from '@/components/partials/AppNav/AppNav';
   import AppSocials from '@/components/ui/AppSocials/AppSocials';
+  import AppIntro from '@/components/ui/AppIntro/AppIntro';
 
   export default {
     name: 'AppHeader',
-    components: { AppSocials, AppNav },
+    components: { AppIntro, AppSocials, AppNav },
     data() {
       return {
         isOpened: false,
