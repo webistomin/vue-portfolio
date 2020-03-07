@@ -167,3 +167,10 @@
       align-items: center
       z-index: 2
       position: relative
+
+  +e('hand')
+    display: inline-block
+    transform-origin: 100% 100%
+
+    &:hover
+      animation: wave 350ms ease-in-out infinite alternate

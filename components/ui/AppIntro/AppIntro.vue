@@ -9,6 +9,7 @@
             img.intro__img(src='/img/me.jpg' alt='Alexey Istomin' width='552' height='628')
       .intro__column.intro__column--padding
         h2.intro__title.title {{ $t("intro.title") }}
+          span.intro__hand 👋
         p.intro__text {{ $t("intro.text") }}
         a.intro__link.btn(href='#contacts', data-scroll='') {{ $t("intro.link") }}
 </template>
