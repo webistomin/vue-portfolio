@@ -30,6 +30,13 @@
         p.about__place
           a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
             | {{ $t("about.place") }}
+      .about__desc
+        .about__info
+          span.about__degree Школа разработки интерфейсов
+          time.about__date 2019
+        p.about__place
+          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
+            | Яндекс
 </template>
 
 <script>
