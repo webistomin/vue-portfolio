@@ -1,0 +1,112 @@
+html
+  display: flex
+
+body
+  position: relative
+  box-sizing: border-box
+  min-height: 100vh
+  width: 100%
+  display: flex
+  flex-direction: column
+  margin: 0
+  font-size: $font-size-body
+  line-height: $line-height-body
+  font-family: $font-family-main
+  color: $color-text
+  font-weight: 400
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  -webkit-text-size-adjust: none
+  -webkit-tap-highlight-color: transparent
+
+  @supports (min-height: calc(var(--vh) * 100))
+    min-height: calc(var(--vh) * 100)
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+audio, canvas,
+iframe, svg, video, img
+  vertical-align: top
+
+ul
+  padding: 0
+  margin: 0
+  list-style: none
+
+li
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+a
+  color: inherit
+  text-decoration: none
+  touch-action: manipulation
+
+blockquote
+  margin: 0
+
+p
+  margin: 0
+
+button
+  padding: 0
+  border: none
+  background-color: transparent
+  cursor: pointer
+  user-select: none
+  -webkit-tap-highlight-color: transparent
+  touch-action: manipulation
+
+figure
+  margin: 0
+
+textarea
+  resize: none
+
+::-moz-selection
+  background-color: $color-main
+  color: $color-white
+  text-shadow: none
+
+::selection
+  background-color: $color-main
+  color: $color-white
+  text-shadow: none
+
+input,
+input[type=search],
+input[type=submit],
+textarea
+  -webkit-appearance: none
+  appearance: none
+  border-radius: 0
+  box-shadow: none
+  touch-action: manipulation
+
+  &:required
+    box-shadow: none
+
+input::-ms-clear
+  display: none
+
+label
+  cursor: pointer
+  touch-action: manipulation
+  -webkit-tap-highlight-color: transparent
+
+picture
+  display: block
+
+[id="__nuxt"],
+[id="__layout"],
+[id="app"]
+  min-height: inherit
+  width: inherit
+  display: inherit
+  flex-direction: inherit
+
+

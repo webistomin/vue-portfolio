@@ -1,0 +1,50 @@
+{
+  "pageHeader": {
+    "desc": "Frontend developer"
+  },
+  "mainNav": {
+    "firstLink": "About me",
+    "secondLink": "Portfolio",
+    "thirdLink": "Contacts",
+    "fourthLink": "Home"
+  },
+  "intro": {
+    "title": "Hello",
+    "text": "My name is Alexey, I'm a junior frontend developer, currently focusing on Vue.js",
+    "link": "Hire me"
+  },
+  "about": {
+    "title": "About me",
+    "firstText": "I create crossbrowser responsive HTML page layouts and make it live using native JavaScript or Vue.js framework.",
+    "secondText": "I can help you with converting website design to HTML templates, developing frontend for your project and optimizing existing code.",
+    "thirdText": "These skills help me along the way:",
+    "fourthText": "All the things: responsive, adaptive, mobile-first.",
+    "fifthText": "By default support Edge and modern version of Chrome, Mozilla Firefox, Opera, Safari.",
+    "sixthText": "All that depends on me must works fast. Css-sprites, svg symbols, webp pictures, responsive images, efficient code, optimization and minification. Clean markup reach 90+ on Google Tests.",
+    "seventhText": "I have some backend programming experience and think as a backend programmer will think when working with my code.",
+    "titleSecond": "Education",
+    "degree": "Bachelor's degree with honors",
+    "place": "State University of Humanities and Technology, Orekhovo-Zuyevo"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "caption": "Project",
+    "firstBtn": "Live Demo",
+    "secondBtn": "View source",
+    "thirdBtn": "View all projects"
+  },
+  "pageFooter": {
+    "title": "Contacts",
+    "firstInfo": "E-mail",
+    "secondInfo": "Skype",
+    "thirdInfo": "CV",
+    "name": "Alexey Istomin",
+    "secondTitle": "Thanks",
+    "text": "fg",
+    "firstLabel": "Your name",
+    "secondLabel": "Your e-mail",
+    "thirdLabel": "Your message",
+    "btn": "Send",
+    "copyright": "©2018 ALL RIGHTS RESERVED. Alexey Istomin - junior frontend developer based in Russia."
+  }
+}
