@@ -1,3 +1,15 @@
+const pollyfils = [
+  'Object.entries',
+  'CustomEvent',
+  'Array.from',
+  'IntersectionObserver',
+  'IntersectionObserverEntry',
+  'Element.prototype.closest',
+  'NodeList.prototype.forEach',
+  'Array.prototype.forEach',
+  'Node.prototype.contains',
+].join('%2C');
+
 export default {
   mode: 'universal',
 
@@ -28,6 +40,9 @@ export default {
       { 'http-equiv': 'x-ua-compatible', content: 'ie=edge' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      { src: `https://polyfill.io/v3/polyfill.min.js?features=${pollyfils}`, body: true },
+    ],
   },
 
   generate: {
