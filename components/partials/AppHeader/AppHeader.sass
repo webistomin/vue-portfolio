@@ -3,6 +3,10 @@
   flex-shrink: 0
   display: flex
   flex-direction: column
+  min-height: 100vh
+
+  @supports (min-height: calc(var(--vh) * 100))
+    min-height: calc(var(--vh) * 100)
 
   +m('blue')
     background-image: none
@@ -19,9 +23,6 @@
     +m('blue')
       background-image: none
       background-color: $color-main
-
-  +media($screen-lg)
-    min-height: 100vh
 
   +e('logo')
     margin: 0
@@ -192,7 +193,7 @@
 
     +media($screen-xxl)
       &::before
-        width: 490px
+        width: 450px
 
     +media($screen-xxxl)
       &::before
@@ -242,6 +243,9 @@
     +media($screen-md)
       margin-right: 25px
       z-index: 2
+
+      +ie()
+        margin-right: auto
 
       +m('padding')
         margin-right: 0

@@ -14,7 +14,8 @@
           to='/en'
           ) EN
       .page-header__logotype
-        h1.page-header__logo Istomin.
+        h1.page-header__logo
+          nuxt-link(to='/').page-header__home Istomin.
         span.page-header__desc {{ $t('pageHeader.desc') }}
       button(
         :class="{'page-header__toggle_opened' : isOpened}"
@@ -27,8 +28,11 @@
         span.page-header__line
         span.page-header__line
       AppNav(:isNavOpened='isOpened')
-      AppSocials
-    AppIntro
+      AppSocials(
+        :isSquared='true'
+        :socials='socials'
+      )
+    AppIntro(v-if='$route.path === "/"')
 </template>
 
 <script>
@@ -42,6 +46,20 @@
     data() {
       return {
         isOpened: false,
+        socials: [
+          {
+            link: 'https://t.me/webistomin',
+            name: 'Telegram',
+          },
+          {
+            link: 'https://vk.com/webistomin',
+            name: 'Vk',
+          },
+          {
+            link: 'https://linkedin.com/in/webistomin',
+            name: 'LinkedIn',
+          },
+        ],
       };
     },
     methods: {

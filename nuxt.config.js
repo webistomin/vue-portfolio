@@ -1,3 +1,15 @@
+const pollyfils = [
+  'Object.entries',
+  'CustomEvent',
+  'Array.from',
+  'IntersectionObserver',
+  'IntersectionObserverEntry',
+  'Element.prototype.closest',
+  'NodeList.prototype.forEach',
+  'Array.prototype.forEach',
+  'Node.prototype.contains',
+].join('%2C');
+
 export default {
   mode: 'universal',
 
@@ -23,9 +35,14 @@ export default {
       { name: 'format-detection', content: 'address=no' },
       { name: 'format-detection', content: 'email=no' },
       { name: 'google', content: 'notranslate' },
+      { name: 'yandex-verification', content: 'e40d681c4b094086' },
+      { name: 'google-site-verification', content: 'UnLetmkWA1WVaJxJ8jVdhGDunUX0B2-6b_qi2gA6iLs' },
       { 'http-equiv': 'x-ua-compatible', content: 'ie=edge' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      { src: `https://polyfill.io/v3/polyfill.min.js?features=${pollyfils}`, body: true },
+    ],
   },
 
   generate: {
@@ -48,6 +65,9 @@ export default {
     { src: '~/plugins/libs/picturefill.js', ssr: false },
     { src: '~/plugins/libs/svg4everybody.js', ssr: false },
     { src: '~/plugins/libs/i18n.js', ssr: true },
+    { src: '~/plugins/libs/scrollto.js', ssr: true },
+    { src: '~/plugins/libs/lazy-image.js', ssr: true },
+    { src: '~/plugins/libs/sal.js', ssr: false },
   ],
 
   buildModules: ['@nuxtjs/style-resources', '@nuxtjs/svg-sprite', '@nuxtjs/eslint-module'],
@@ -55,6 +75,7 @@ export default {
   modules: ['@nuxtjs/pwa', ['@nuxtjs/router', { path: 'router', DefaultRouter: true }]],
 
   build: {
+    transpile: ['gsap'],
     babel: {
       plugins: ['@babel/plugin-proposal-optional-chaining', '@babel/plugin-proposal-nullish-coalescing-operator'],
     },

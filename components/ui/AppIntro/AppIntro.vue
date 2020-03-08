@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.intro
+  section(@mouseenter='animateHand' @mouseleave='pauseHand').intro
     .container.intro__container
       .intro__column.intro__column--margin
         figure.intro__figure
@@ -9,14 +9,31 @@
             img.intro__img(src='/img/me.jpg' alt='Alexey Istomin' width='552' height='628')
       .intro__column.intro__column--padding
         h2.intro__title.title {{ $t("intro.title") }}
-          span.intro__hand 👋
+          span(ref='introHand').intro__hand 👋
         p.intro__text {{ $t("intro.text") }}
-        a.intro__link.btn(href='#contacts', data-scroll='') {{ $t("intro.link") }}
+        a.intro__link.btn(
+          @click='scrollToElement($event, "#contacts")'
+          href='#contacts') {{ $t("intro.link") }}
 </template>
 
 <script>
   export default {
     name: 'AppIntro',
+    methods: {
+      animateHand() {
+        this.$refs.introHand.style.animationPlayState = 'running';
+      },
+      pauseHand() {
+        this.$refs.introHand.style.animationPlayState = 'paused';
+      },
+      scrollToElement(e, el) {
+        e.preventDefault();
+        this.$scrollTo(el, 1500, {
+          easing: [0.215, 0.61, 0.355, 1],
+          offset: -100,
+        });
+      },
+    },
   };
 </script>
 
