@@ -11,9 +11,11 @@
 </template>
 
 <script>
+  import { gsap, CSSPlugin } from 'gsap/all';
   import throttle from 'lodash.throttle';
   import AppHeader from '@/components/partials/AppHeader/AppHeader';
   import AppFooter from '@/components/partials/AppFooter/AppFooter';
+  gsap.registerPlugin(CSSPlugin);
 
   export default {
     components: { AppFooter, AppHeader },
@@ -141,11 +143,9 @@
 
           if (self.cursorEnlarged) {
             self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
-            self.$dot.style.backgroundColor = '#ffffff';
             self.$outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
           } else {
             self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
-            self.$dot.style.backgroundColor = 'blue';
             self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
           }
         },
@@ -162,8 +162,32 @@
           }
         },
       };
-
       cursor.init();
+
+      // Overlay
+      this.$router.beforeEach((to, from, next) => {
+        if (to.path === from.path) {
+          next();
+          // eslint-disable-next-line no-useless-return
+          return;
+        }
+
+        const overlay = this.$refs.overlay;
+        gsap.fromTo(
+          overlay,
+          { x: '-100%' },
+          {
+            x: 0,
+            duration: 1,
+            ease: 'Cubic.easeInOut',
+            onComplete: () => {
+              next();
+              window.scrollTo(0, 0);
+              gsap.fromTo(overlay, { x: 0 }, { x: '100%' });
+            },
+          }
+        );
+      });
     },
   };
 </script>

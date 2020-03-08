@@ -51,6 +51,8 @@ export default {
     { src: '~/plugins/libs/svg4everybody.js', ssr: false },
     { src: '~/plugins/libs/i18n.js', ssr: true },
     { src: '~/plugins/libs/scrollto.js', ssr: true },
+    { src: '~/plugins/libs/lazy-image.js', ssr: true },
+    { src: '~/plugins/libs/sal.js', ssr: false },
   ],
 
   buildModules: ['@nuxtjs/style-resources', '@nuxtjs/svg-sprite', '@nuxtjs/eslint-module'],
@@ -58,6 +60,7 @@ export default {
   modules: ['@nuxtjs/pwa', ['@nuxtjs/router', { path: 'router', DefaultRouter: true }]],
 
   build: {
+    transpile: ['gsap'],
     babel: {
       plugins: ['@babel/plugin-proposal-optional-chaining', '@babel/plugin-proposal-nullish-coalescing-operator'],
     },
