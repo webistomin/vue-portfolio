@@ -2,43 +2,9 @@
   section#contacts.contacts
     .contacts__column
       h2.contacts__title.title {{ $t('pageFooter.title') }}
-      section.socials
-        ul.socials__list
-          li.socials__item
-            a.socials__link(href='https://t.me/webistomin', target='_blank', rel='noopener noreferrer nofollow', title='Telegram')
-              svg-icon(
-                width='25'
-                height='25'
-                name='icon-telegram'
-              ).socials__icon
-          li.socials__item
-            a.socials__link(href='https://vk.com/webistomin', target='_blank', rel='noopener noreferrer nofollow', title='VK')
-              svg-icon(
-                width='25'
-                height='25'
-                name='icon-vk'
-              ).socials__icon
-          li.socials__item
-            a.socials__link(href='https://www.facebook.com/webistomin', target='_blank', rel='noopener noreferrer nofollow', title='Facebook')
-              svg-icon(
-                width='25'
-                height='25'
-                name='icon-facebook'
-              ).socials__icon
-          li.socials__item
-            a.socials__link(href='https://linkedin.com/in/webistomin', target='_blank', rel='noopener noreferrer nofollow', title='LinkedIn')
-              svg-icon(
-                width='25'
-                height='25'
-                name='icon-linkedin'
-              ).socials__icon
-          li.socials__item
-            a.socials__link(href='https://github.com/webistomin', target='_blank', rel='noopener noreferrer nofollow', title='GitHub')
-              svg-icon(
-                width='25'
-                height='25'
-                name='icon-github'
-              ).socials__icon
+      AppSocials(
+        :socials='socials'
+      )
       .contacts__info
         h3.contacts__desc {{ $t('pageFooter.firstInfo') }}
         a.contacts__link(href='mailto:istomin.working@gmail.com')
@@ -61,8 +27,33 @@
 </template>
 
 <script>
+  import AppSocials from '@/components/ui/AppSocials/AppSocials';
+
   export default {
     name: 'AppContacts',
+    components: { AppSocials },
+    data() {
+      return {
+        socials: [
+          {
+            link: 'https://t.me/webistomin',
+            name: 'Telegram',
+          },
+          {
+            link: 'https://vk.com/webistomin',
+            name: 'Vk',
+          },
+          {
+            link: 'https://linkedin.com/in/webistomin',
+            name: 'LinkedIn',
+          },
+          {
+            link: 'https://github.com/webistomin',
+            name: 'GitHub',
+          },
+        ],
+      };
+    },
   };
 </script>
 

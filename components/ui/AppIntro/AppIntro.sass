@@ -1,9 +1,8 @@
 +b('intro')
-  margin-top: 20px
-
-  +media($screen-lg)
-    margin-top: auto
-    margin-bottom: auto
+  padding-top: 20px
+  padding-bottom: 20px
+  margin-top: auto
+  margin-bottom: auto
 
   +e('figure')
     position: relative
@@ -118,9 +117,8 @@
       &::before
         transform: translateX(0)
 
-    +media($screen-lg)
+    +media($screen-md)
       position: relative
-      margin: 0
       background-color: $color-white
       color: $color-main
 
@@ -161,6 +159,9 @@
         animation-direction: alternate
         z-index: -1
 
+    +media($screen-lg)
+      margin: 0
+
   +e('container')
     +media($screen-lg)
       display: flex
@@ -171,6 +172,6 @@
   +e('hand')
     display: inline-block
     transform-origin: 100% 100%
-
-    &:hover
-      animation: wave 350ms ease-in-out infinite alternate
+    transform: rotate(15deg)
+    animation: wave 0.3s ease-in-out infinite alternate
+    animation-play-state: paused

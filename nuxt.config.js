@@ -23,6 +23,8 @@ export default {
       { name: 'format-detection', content: 'address=no' },
       { name: 'format-detection', content: 'email=no' },
       { name: 'google', content: 'notranslate' },
+      { name: 'yandex-verification', content: 'e40d681c4b094086' },
+      { name: 'google-site-verification', content: 'UnLetmkWA1WVaJxJ8jVdhGDunUX0B2-6b_qi2gA6iLs' },
       { 'http-equiv': 'x-ua-compatible', content: 'ie=edge' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -48,6 +50,7 @@ export default {
     { src: '~/plugins/libs/picturefill.js', ssr: false },
     { src: '~/plugins/libs/svg4everybody.js', ssr: false },
     { src: '~/plugins/libs/i18n.js', ssr: true },
+    { src: '~/plugins/libs/scrollto.js', ssr: true },
   ],
 
   buildModules: ['@nuxtjs/style-resources', '@nuxtjs/svg-sprite', '@nuxtjs/eslint-module'],

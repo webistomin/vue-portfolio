@@ -1,47 +1,42 @@
-<template lang="pug">
-  .socials.socials_hidden
-    ul.socials__list.socials__list_justify
-      li.socials__item.socials__item_square
+<template lang="pug" functional>
+  .socials(
+    :class='[{"socials_hidden" : props.isSquared}, data.staticClass ? data.staticClass : "", data.class ? data.class : ""]'
+  )
+    ul(
+      :class='{"socials__list_justify" : props.isSquared}'
+    ).socials__list
+      li(
+        v-for='(social, index) of props.socials'
+        :key='`social-${index}`'
+        :class='{"socials__item_square" : props.isSquared}'
+      ).socials__item
         a.socials__link(
-          href='https://t.me/webistomin'
+          :href='social.link'
           target='_blank'
           rel='noopener noreferrer nofollow'
-          title='Telegram'
+          :title='social.name'
         )
           svg-icon(
-            width='30'
-            height='30'
-            name='icon-telegram'
-          ).socials__icon.socials__icon_white.socials__icon_rotate
-      li.socials__item.socials__item_square
-        a.socials__link(
-          href='https://vk.com/webistomin'
-          target='_blank'
-          rel='noopener noreferrer'
-          title='VK'
-        )
-          svg-icon(
-            width='30'
-            height='30'
-            name='icon-vk'
-          ).socials__icon.socials__icon_white.socials__icon_rotate
-      li.socials__item.socials__item_square
-        a.socials__link(
-          href='https://www.linkedin.com/in/webistomin/'
-          target='_blank'
-          rel='noopener noreferrer'
-          title='LinkedIn'
-        )
-          svg-icon(
-            width='30'
-            height='30'
-            name='icon-linkedin'
-          ).socials__icon.socials__icon_white.socials__icon_rotate
+            :width='props.isSquared ? 30 : 24'
+            :height='props.isSquared ? 30 : 24'
+            :name='`icon-${social.name.toLowerCase()}`'
+            :class='{"socials__icon_white socials__icon_rotate" : props.isSquared}'
+          ).socials__icon
 </template>
 
 <script>
   export default {
     name: 'AppSocials',
+    props: {
+      isSquared: {
+        type: Boolean,
+        default: false,
+      },
+      socials: {
+        type: Array,
+        default: () => [],
+      },
+    },
   };
 </script>
 

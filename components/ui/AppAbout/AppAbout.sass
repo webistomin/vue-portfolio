@@ -4,6 +4,9 @@
   +media($screen-md)
     margin-top: 40px
 
+  +media($screen-lg)
+    margin-top: 80px
+
   +e('title')
     text-align: center
     margin-bottom: 10px
@@ -18,6 +21,13 @@
     +media($screen-md)
       +m('small')
         margin-bottom: 20px
+
+    +media($screen-lg)
+      margin-bottom: 40px
+
+      +m('small')
+        margin-bottom: 20px
+        margin-top: 80px
 
   +e('text')
     font-size: 18px
@@ -81,6 +91,7 @@
     line-height: 25px
     font-style: normal
     font-weight: 700
+    padding-right: 10px
 
     +media($screen-sm)
       font-size: 20px

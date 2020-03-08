@@ -1,5 +1,6 @@
 html
   display: flex
+  +scrollbar(15px, $color-main, #f1f1f1, 0)
 
 body
   position: relative
@@ -18,6 +19,9 @@ body
   -moz-osx-font-smoothing: grayscale
   -webkit-text-size-adjust: none
   -webkit-tap-highlight-color: transparent
+
+  @supports (min-height: calc(var(--vh) * 100))
+    min-height: calc(var(--vh) * 100)
 
 img
   display: block

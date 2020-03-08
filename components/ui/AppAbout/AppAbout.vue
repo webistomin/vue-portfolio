@@ -22,6 +22,23 @@
       p.about__text {{ $t("about.fifthText") }}
       p.about__text {{ $t("about.sixthText") }}
       p.about__text {{ $t("about.seventhText") }}
+
+      h4.about__title.about__title_small.title Опыт работы
+      .about__desc
+        .about__info
+          span.about__degree Фронтенд-разработчик
+          time.about__date 2018-2020
+        p.about__place
+          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
+            | Ginger Grandpa
+      .about__desc
+        .about__info
+          span.about__degree Фронтенд-разработчик
+          time.about__date 2020 - настоящее время
+        p.about__place
+          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
+            | Яндекс
+
       h4.about__title.about__title_small.title {{ $t("about.titleSecond") }}
       .about__desc
         .about__info
@@ -37,6 +54,31 @@
         p.about__place
           a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
             | Яндекс
+
+      h4.about__title.about__title_small.title Открытые проекты
+      .about__desc
+        .about__info
+          span.about__degree posthtml-link-noreferrer
+          time.about__date 2019
+        p.about__place
+          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
+            | Пакет плагин для PostHTML
+
+      .about__desc
+        .about__info
+          span.about__degree posthtml-link-lazyload
+          time.about__date 2019
+        p.about__place
+          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
+            | Пакет плагин для PostHTML
+
+      .about__desc
+        .about__info
+          span.about__degree vue-testing-handbook
+          time.about__date 2019
+        p.about__place
+          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
+            | Перевод книги по тестированию Vue-приложений на русский язык
 </template>
 
 <script>

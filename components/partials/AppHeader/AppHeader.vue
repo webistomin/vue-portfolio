@@ -27,7 +27,10 @@
         span.page-header__line
         span.page-header__line
       AppNav(:isNavOpened='isOpened')
-      AppSocials
+      AppSocials(
+        :isSquared='true'
+        :socials='socials'
+      )
     AppIntro
 </template>
 
@@ -42,6 +45,20 @@
     data() {
       return {
         isOpened: false,
+        socials: [
+          {
+            link: 'https://t.me/webistomin',
+            name: 'Telegram',
+          },
+          {
+            link: 'https://vk.com/webistomin',
+            name: 'Vk',
+          },
+          {
+            link: 'https://linkedin.com/in/webistomin',
+            name: 'LinkedIn',
+          },
+        ],
       };
     },
     methods: {
