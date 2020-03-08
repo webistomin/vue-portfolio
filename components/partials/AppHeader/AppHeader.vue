@@ -14,7 +14,8 @@
           to='/en'
           ) EN
       .page-header__logotype
-        h1.page-header__logo Istomin.
+        h1.page-header__logo
+          nuxt-link(to='/').page-header__home Istomin.
         span.page-header__desc {{ $t('pageHeader.desc') }}
       button(
         :class="{'page-header__toggle_opened' : isOpened}"
@@ -31,7 +32,7 @@
         :isSquared='true'
         :socials='socials'
       )
-    AppIntro
+    AppIntro(v-if='$route.path === "/"')
 </template>
 
 <script>

@@ -112,7 +112,7 @@
             a.portfolio__link.btn(href='http://ishop.mcdir.ru/', target='_blank', rel='noopener noreferrer')
               | {{ $t("portfolio.firstBtn") }}
             a.portfolio__link.btn(href='https://github.com/webistomin/my-shop', target='_blank', rel='noopener noreferrer') {{ $t("portfolio.secondBtn") }}
-      router-link.portfolio__link.btn(tag='a', to='/projects-page')
+      nuxt-link.portfolio__link.btn(to='/portfolio')
         | {{ $t("portfolio.thirdBtn") }}
 
 </template>

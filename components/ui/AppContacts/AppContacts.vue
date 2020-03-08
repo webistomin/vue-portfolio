@@ -4,7 +4,7 @@
       h2.contacts__title.title {{ $t('pageFooter.title') }}
       AppSocials(
         :socials='socials'
-      )
+      ).socials_grey
       .contacts__info
         h3.contacts__desc {{ $t('pageFooter.firstInfo') }}
         a.contacts__link(href='mailto:istomin.working@gmail.com')
