@@ -46,6 +46,7 @@
         endY: window.innerHeight / 2,
         cursorVisible: true,
         cursorEnlarged: false,
+        cursorWhite: false,
         $dot: document.getElementById('js-cursor-dot'),
         $outline: document.getElementById('js-cursor-outline'),
 
@@ -86,6 +87,17 @@
             el.addEventListener('mouseout', function() {
               self.cursorEnlarged = false;
               self.toggleCursorSize();
+            });
+          });
+
+          document.querySelectorAll('[data-cursor-white]').forEach(function(el) {
+            el.addEventListener('mouseover', function() {
+              self.cursorWhite = true;
+              self.toggleWhiteCursor();
+            });
+            el.addEventListener('mouseout', function() {
+              self.cursorWhite = false;
+              self.toggleWhiteCursor();
             });
           });
 
@@ -150,6 +162,18 @@
           }
         },
 
+        toggleWhiteCursor() {
+          const self = this;
+
+          if (self.cursorWhite) {
+            self.$dot.classList.add('cursor__dot_white');
+            self.$outline.classList.add('cursor__outline_white');
+          } else {
+            self.$dot.classList.remove('cursor__dot_white');
+            self.$outline.classList.remove('cursor__outline_white');
+          }
+        },
+
         toggleCursorVisibility() {
           const self = this;
 
@@ -187,6 +211,12 @@
             },
           }
         );
+      });
+
+      this.$router.afterEach(() => {
+        this.$nextTick(() => {
+          cursor.setupEventListeners();
+        });
       });
     },
   };

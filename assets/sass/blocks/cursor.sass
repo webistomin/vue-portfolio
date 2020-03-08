@@ -25,6 +25,9 @@
     backface-visibility: hidden
     will-change: top, left, transform, background-color, width, height
 
+    +m('white')
+      background-color: $color-white
+
   +e('outline')
     width: 40px
     height: 40px
@@ -37,6 +40,9 @@
     opacity: 0
     transform: translate(-50%, -50%)
     z-index: 1
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, background-color 0.3s ease-in-out
     backface-visibility: hidden
     will-change: top, left, transform, background-color, width, height
+
+    +m('white')
+      background-color: rgba($color-white, 0.5)

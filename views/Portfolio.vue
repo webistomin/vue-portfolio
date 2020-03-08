@@ -1,9 +1,18 @@
 <template lang="pug">
-  h2 h1 {{ $t('about.firstText') }}
+  AppContent
+    AppPortfolio
 </template>
 
 <script>
+  import sal from 'sal.js';
+  import AppPortfolio from '@/components/ui/AppPortfolio/AppPortfolio';
+  import AppContent from '@/components/partials/AppContent/AppContent';
+
   export default {
     name: 'Portfolio',
+    components: { AppContent, AppPortfolio },
+    mounted() {
+      sal();
+    },
   };
 </script>
