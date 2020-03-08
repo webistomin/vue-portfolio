@@ -4,22 +4,28 @@
     role='navigation'
   )
     ul.main-nav__list
-      li.main-nav__item
+      li(v-if='!isMainPage' :class='{"main-nav__item_blue" : !isMainPage}').main-nav__item
+        nuxt-link.main-nav__link(to='/' :class='{"main-nav__link_white" : !isMainPage}')
+          | Главная
+      li(v-else :class='{"main-nav__item_blue" : !isMainPage}').main-nav__item
         a.main-nav__link(
           @click='scrollToElement($event, "#about")'
           href='#about'
+          :class='{"main-nav__link_white" : !isMainPage}'
           )
           | {{ $t('mainNav.firstLink') }}
-      li.main-nav__item
+      li(:class='{"main-nav__item_blue" : !isMainPage}').main-nav__item
         a.main-nav__link(
           @click='scrollToElement($event, "#portfolio")'
           href='#portfolio'
+          :class='{"main-nav__link_white" : !isMainPage}'
           )
           | {{ $t('mainNav.secondLink') }}
-      li.main-nav__item
+      li(:class='{"main-nav__item_blue" : !isMainPage}').main-nav__item
         a.main-nav__link(
           @click='scrollToElement($event, "#contacts")'
           href='#contacts'
+          :class='{"main-nav__link_white" : !isMainPage}'
           )
           | {{ $t('mainNav.thirdLink') }}
 </template>
@@ -29,6 +35,10 @@
     name: 'AppNav',
     props: {
       isNavOpened: {
+        type: Boolean,
+        default: false,
+      },
+      isMainPage: {
         type: Boolean,
         default: false,
       },

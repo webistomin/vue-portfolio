@@ -1,7 +1,11 @@
 <template lang="pug">
-  header.page-header(role='banner')
-    .page-header__inner
-      .page-header__links
+  header.page-header(
+    role='banner'
+    :class='{"page-header_blue" : !isMainPage}'
+    )
+    .page-header__inner(:class='{"page-header__inner_blue" : !isMainPage}')
+      .page-header__decor(data-cursor-white v-if='isMainPage')
+      .page-header__links(:class='{"page-header__links_high" : !isMainPage}')
         nuxt-link.page-header__link.page-header__link_ru(
           title='Russian version'
           :class='{"page-header__link_active" : $store.state.locale === "ru"}'
@@ -27,12 +31,13 @@
         span.page-header__line
         span.page-header__line
         span.page-header__line
-      AppNav(:isNavOpened='isOpened')
+      AppNav(:isNavOpened='isOpened' :isMainPage='isMainPage')
       AppSocials(
         :isSquared='true'
         :socials='socials'
+        :isWhite='!isMainPage'
       )
-    AppIntro(v-if='$route.path === "/"')
+    AppIntro(v-if='isMainPage')
 </template>
 
 <script>
@@ -61,6 +66,11 @@
           },
         ],
       };
+    },
+    computed: {
+      isMainPage() {
+        return this.$route.name === 'main';
+      },
     },
     methods: {
       openMenu() {
