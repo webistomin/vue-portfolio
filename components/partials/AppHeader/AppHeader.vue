@@ -4,7 +4,7 @@
     :class='{"page-header_blue" : !isMainPage}'
     )
     .page-header__inner(:class='{"page-header__inner_blue" : !isMainPage}')
-      .page-header__decor(data-cursor-white v-if='isMainPage')
+      .page-header__decor(data-cursor-white :class='{"page-header__decor_wide" : !isMainPage}')
       .page-header__links(:class='{"page-header__links_high" : !isMainPage}')
         nuxt-link.page-header__link.page-header__link_ru(
           title='Russian version'

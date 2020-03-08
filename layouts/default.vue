@@ -212,6 +212,12 @@
           }
         );
       });
+
+      this.$router.afterEach(() => {
+        this.$nextTick(() => {
+          cursor.setupEventListeners();
+        });
+      });
     },
   };
 </script>

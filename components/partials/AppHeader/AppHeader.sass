@@ -163,11 +163,21 @@
     +media($screen-lg)
       min-height: 100vh
 
+      +m('wide')
+        width: 100%
+        min-height: auto
+
     +media($screen-xxl)
       width: 450px
 
+      +m('wide')
+        width: 100%
+
     +media($screen-xxxl)
       width: 490px
+
+      +m('wide')
+        width: 100%
 
   +e('inner')
     padding: 10px 5%

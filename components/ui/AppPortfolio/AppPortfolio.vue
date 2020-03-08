@@ -127,7 +127,7 @@
             a.portfolio__link.btn(href='http://ishop.mcdir.ru/', target='_blank', rel='noopener noreferrer')
               | {{ $t("portfolio.firstBtn") }}
             a.portfolio__link.btn(href='https://github.com/webistomin/my-shop', target='_blank', rel='noopener noreferrer') {{ $t("portfolio.secondBtn") }}
-      nuxt-link.portfolio__link.btn(to='/portfolio' data-animation='fade-up')
+      nuxt-link.portfolio__link.btn(to='/portfolio' data-animation='fade-up' v-if='isMainPage')
         | {{ $t("portfolio.thirdBtn") }}
 
 </template>
@@ -135,6 +135,11 @@
 <script>
   export default {
     name: 'AppPortfolio',
+    computed: {
+      isMainPage() {
+        return this.$route.name === 'main';
+      },
+    },
   };
 </script>
 
