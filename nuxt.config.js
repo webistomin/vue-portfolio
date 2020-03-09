@@ -40,9 +40,7 @@ export default {
       { 'http-equiv': 'x-ua-compatible', content: 'ie=edge' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [
-      { src: `https://polyfill.io/v3/polyfill.min.js?features=${pollyfils}`, body: true },
-    ],
+    script: [{ src: `https://polyfill.io/v3/polyfill.min.js?features=${pollyfils}`, body: true }],
   },
 
   generate: {
@@ -72,7 +70,17 @@ export default {
 
   buildModules: ['@nuxtjs/style-resources', '@nuxtjs/svg-sprite', '@nuxtjs/eslint-module'],
 
-  modules: ['@nuxtjs/pwa', ['@nuxtjs/router', { path: 'router', DefaultRouter: true }]],
+  modules: [
+    '@nuxtjs/pwa',
+    ['@nuxtjs/router', { path: 'router', DefaultRouter: true }],
+    [
+      '@nuxtjs/sitemap',
+      {
+        hostname: 'http://webistom.in/',
+      },
+    ],
+    '@nuxtjs/robots',
+  ],
 
   build: {
     transpile: ['gsap'],

@@ -6,8 +6,7 @@
         li(
           v-for='(project, index) of projects.slice(0, isMainPage ? 5 : projects.length)'
           :key='project.title'
-          :class='{"portfolio__item_blue" : index === 0, \
-          "portfolio__item_top" : index === 1, \
+          :class='{ "portfolio__item_top" : index === 1, \
             "portfolio__item_margin": index % 2 === 0 && index !== 0}'
           data-animation='fade-up'
           ).portfolio__item
@@ -57,7 +56,11 @@
                 rel='noopener noreferrer'
                 )
                 | {{ $t("portfolio.secondBtn") }}
-      nuxt-link.portfolio__link.btn(to='/portfolio' data-animation='fade-up' v-if='isMainPage')
+      nuxt-link.portfolio__link.btn(
+        :to='getCurrentLocale === "ru" ? "/portfolio" : "/en/portfolio"'
+        data-animation='fade-up'
+        v-if='isMainPage'
+        )
         | {{ $t("portfolio.thirdBtn") }}
 
 </template>
@@ -697,6 +700,9 @@
     computed: {
       isMainPage() {
         return this.$route.name === 'main';
+      },
+      getCurrentLocale() {
+        return this.$store.state.locale;
       },
     },
     async mounted() {
