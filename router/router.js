@@ -19,12 +19,10 @@ export function createRouter() {
       {
         path: '/portfolio',
         component: Portfolio,
-        name: 'portfolio',
       },
       {
         path: '/:lang/portfolio',
         component: Portfolio,
-        name: 'portfolio',
       },
       {
         path: '/:lang?',

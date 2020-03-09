@@ -33,6 +33,8 @@
     "@babel/plugin-proposal-optional-chaining": "^7.8.3",
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/robots": "^2.4.2",
+    "@nuxtjs/sitemap": "^2.0.1",
     "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/svg-sprite": "^0.4.9",
     "autoprefixer": "^9.7.4",
