@@ -1,7 +1,7 @@
 html
   display: flex
   overflow-x: hidden
-  +scrollbar(15px, $color-main, #f1f1f1, 0)
+  +scrollbar(15px, rgba($color-main, 0.5), #f1f1f1, 0)
 
 body
   position: relative
@@ -24,11 +24,19 @@ body
   @supports (min-height: calc(var(--vh) * 100))
     min-height: calc(var(--vh) * 100)
 
-html,
-html *,
-body,
-body *
-  cursor: none
+@media (pointer: fine)
+  html,
+  html *,
+  body,
+  body *
+    cursor: none !important
+
++ie()
+  html,
+  html *,
+  body,
+  body *
+    cursor: none !important
 
 img
   display: block

@@ -25,6 +25,7 @@
     "sal.js": "^0.7.4",
     "svg4everybody": "^2.1.9",
     "v-lazy-image": "^1.4.0",
+    "vanilla-tilt": "^1.7.0",
     "vue-scrollto": "^2.17.1"
   },
   "devDependencies": {
