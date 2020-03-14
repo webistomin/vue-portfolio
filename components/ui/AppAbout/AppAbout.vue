@@ -42,14 +42,14 @@
           span.about__degree {{ parent.$t("about.degree") }}
           time.about__date 2014-2018
         p.about__place
-          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
+          a.about__link(href='http://www.ggtu.ru/', target='_blank', rel='noopener noreferrer')
             | {{ parent.$t("about.place") }}
       .about__desc(data-animation='fade-up')
         .about__info
           span.about__degree {{ parent.$t("about.shri") }}
           time.about__date 2019
         p.about__place
-          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
+          a.about__link(href='https://yandex.ru/promo/academy/shri', target='_blank', rel='noopener noreferrer')
             | {{parent.$t("about.ya")}}
 
       h4(data-animation='fade-up').about__title.about__title_small.title {{parent.$t("about.opensource")}}
@@ -74,7 +74,7 @@
           span.about__degree vue-testing-handbook
           time.about__date 2019
         p.about__place
-          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
+          a.about__link(href='https://lmiller1990.github.io/vue-testing-handbook/ru/', target='_blank', rel='noopener noreferrer')
             | {{parent.$t("about.project-book")}}
 </template>
 

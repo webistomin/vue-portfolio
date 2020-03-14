@@ -31,6 +31,7 @@ export default {
       { name: 'yandex-verification', content: 'e40d681c4b094086' },
       { name: 'google-site-verification', content: 'UnLetmkWA1WVaJxJ8jVdhGDunUX0B2-6b_qi2gA6iLs' },
       { 'http-equiv': 'x-ua-compatible', content: 'ie=edge' },
+      { property: 'vk:image', content: 'http://webistom.in/img/sharing/fb-sharing.png' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [{ src: `https://polyfill.io/v3/polyfill.min.js?features=${pollyfils}`, body: true }],
