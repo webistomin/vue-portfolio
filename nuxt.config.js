@@ -15,20 +15,13 @@ export default {
 
   head: {
     htmlAttrs: {
-      lang: 'ru',
       dir: 'ltr',
     },
-    title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover',
-      },
-      {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || '',
       },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'format-detection', content: 'date=no' },
@@ -43,6 +36,31 @@ export default {
     script: [{ src: `https://polyfill.io/v3/polyfill.min.js?features=${pollyfils}`, body: true }],
   },
 
+  meta: {
+    name: 'Алексей Истомин :: Фронтенд разработчик',
+    author: 'webistomin',
+    description:
+      'webistom.in :: сайт-портфолио. Фронтенд разработчик из Москвы. Работаю с Vue.js/React.js. Мне нравится искать интересные решения, создавать невозможное при помощи CSS и реализовывать идеи в виде сайтов.',
+    theme_color: '#000fff',
+    lang: 'ru',
+    ogTitle: 'Алексей Истомин :: Фронтенд разработчик',
+    ogDescription:
+      'webistom.in :: сайт-портфолио. Фронтенд разработчик из Москвы. Работаю с Vue.js/React.js. Мне нравится искать интересные решения, создавать невозможное при помощи CSS и реализовывать идеи в виде сайтов.',
+    ogHost: 'http://webistom.in/',
+    ogImage: `http://webistom.in/img/sharing/fb-sharing.png`,
+    ogUrl: 'http://webistom.in/',
+  },
+
+  manifest: {
+    lang: 'ru-RU',
+    background_color: '#000fff',
+    theme_color: '#000fff',
+    name: 'Алексей Истомин :: Фронтенд разработчик',
+    description:
+      'webistom.in :: сайт-портфолио. Фронтенд разработчик из Москвы. Работаю с Vue.js/React.js. Мне нравится искать интересные решения, создавать невозможное при помощи CSS и реализовывать идеи в виде сайтов.',
+    short_name: 'Webistomin',
+  },
+
   generate: {
     routes: ['/', '/portfolio', '/en', '/en/portfolio'],
   },
@@ -51,7 +69,7 @@ export default {
     middleware: 'i18n',
   },
 
-  loading: { color: '#fff' },
+  loading: { color: '#000fff' },
 
   css: ['~assets/sass/main.sass'],
 

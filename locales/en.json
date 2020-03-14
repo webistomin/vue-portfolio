@@ -1,6 +1,8 @@
 {
   "meta": {
-    "homeTitle": "Аlexey Istomin :: Frontend developer"
+    "homeTitle": "Аlexey Istomin :: Frontend developer",
+    "description": "webistom.in :: portfolio website. Alexey Istomin - front-end developer from Moscow, Russia",
+    "keywords": "Portfolio, layout, website development, frontend"
   },
   "pageHeader": {
     "desc": "Frontend developer"
