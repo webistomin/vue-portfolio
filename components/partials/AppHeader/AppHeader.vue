@@ -19,7 +19,7 @@
           ) EN
       .page-header__logotype
         h1.page-header__logo
-          nuxt-link(to='/').page-header__home Istomin.
+          nuxt-link(:to='$store.state.locale === "ru" ? "/" : "/en"').page-header__home Istomin.
         span.page-header__desc {{ $t('pageHeader.desc') }}
       button(
         :class="{'page-header__toggle_opened' : isOpened}"

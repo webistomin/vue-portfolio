@@ -190,7 +190,9 @@
 
       // Overlay
       this.$router.beforeEach((to, from, next) => {
-        if (to.path === from.path) {
+        console.log(to, from);
+
+        if (to.path === from.path || to.name === from.name) {
           next();
           // eslint-disable-next-line no-useless-return
           return;
@@ -218,6 +220,13 @@
           cursor.setupEventListeners();
         });
       });
+    },
+    head() {
+      return {
+        htmlAttrs: {
+          lang: this.$i18n.locale,
+        },
+      };
     },
   };
 </script>

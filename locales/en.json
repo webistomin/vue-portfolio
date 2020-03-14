@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "homeTitle": "Аlexey Istomin :: Frontend developer"
+  },
   "pageHeader": {
     "desc": "Frontend developer"
   },
@@ -10,21 +13,28 @@
   },
   "intro": {
     "title": "Hello",
-    "text": "My name is Alexey, I'm a junior frontend developer, currently focusing on Vue.js",
-    "link": "Hire me"
+    "text": "I’m Alex, frontend developer from Moscow, Russia. I like to look for interesting solutions, create impossible with CSS and implement ideas in the form of sites.",
+    "link": "Contact me"
   },
   "about": {
     "title": "About me",
-    "firstText": "I create crossbrowser responsive HTML page layouts and make it live using native JavaScript or Vue.js framework.",
-    "secondText": "I can help you with converting website design to HTML templates, developing frontend for your project and optimizing existing code.",
-    "thirdText": "These skills help me along the way:",
-    "fourthText": "All the things: responsive, adaptive, mobile-first.",
-    "fifthText": "By default support Edge and modern version of Chrome, Mozilla Firefox, Opera, Safari.",
-    "sixthText": "All that depends on me must works fast. Css-sprites, svg symbols, webp pictures, responsive images, efficient code, optimization and minification. Clean markup reach 90+ on Google Tests.",
-    "seventhText": "I have some backend programming experience and think as a backend programmer will think when working with my code.",
+    "firstText": "I am a front-end fanatic and UI developer with about 2 years of development experience. I like to create simple, beautiful and convenient sites, and I love what I do.",
+    "secondText": "As a developer, I understand that a perfect UI should look good and work even better. Together with clients, I identify problems and solve them. My goal is to help small and medium-sized projects grow using everything I know about creating and promoting websites.",
+    "thirdText": "My skills:",
+    "fourthText": "All developed sites are responsive and responsive, using the Mobile First approach. I can support Chrome, Opera, Firefox, Safari, Edge. IE can be modified separately.",
+    "fifthText": "I try to do everything that depends on me as quickly as possible. Designed sites often get a green area in Google Speed (90+).",
     "titleSecond": "Education",
     "degree": "Bachelor's degree with honors",
-    "place": "State University of Humanities and Technology, Orekhovo-Zuyevo"
+    "place": "State University of Humanities and Technology, Orekhovo-Zuyevo",
+    "experience": "Experience",
+    "post": "Frontend developer",
+    "nowadays": "nowadays",
+    "ya": "Yandex",
+    "shri": "Interface Development School",
+    "opensource": "Open source",
+    "project-noref": "PostHTML plugin for creating secure links to third-party sites",
+    "project-lazy": "PostHTML plugin for lazy image loading using native technologies",
+    "project-book": "Translation of a book on testing Vue applications into Russian"
   },
   "portfolio": {
     "title": "Portfolio",
@@ -45,6 +55,6 @@
     "secondLabel": "Your e-mail",
     "thirdLabel": "Your message",
     "btn": "Send",
-    "copyright": "©2018 ALL RIGHTS RESERVED. Alexey Istomin - junior frontend developer based in Russia."
+    "copyright": "Alexey Istomin - frontend developer based in Moscow, Russia."
   }
 }
