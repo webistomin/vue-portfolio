@@ -712,6 +712,7 @@
         'max-glare': 0.8,
         speed: 1000,
         reverse: true,
+        gyroscope: false,
       });
     },
   };
