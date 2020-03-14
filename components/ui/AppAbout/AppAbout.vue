@@ -13,29 +13,28 @@
         li.about__item Node.js (Express.js)
         li.about__item TypeScript
         li.about__item LESS/SASS/CSS Modules
+        li.about__item GSAP
         li.about__item Git
         li.about__item Gulp, Webpack
         li.about__item Abobe Photoshop, Adobe XD, Avocode, Figma
       p(data-animation='fade-up').about__text {{ parent.$t("about.fourthText") }}
       p(data-animation='fade-up').about__text {{ parent.$t("about.fifthText") }}
-      p(data-animation='fade-up').about__text {{ parent.$t("about.sixthText") }}
-      p(data-animation='fade-up').about__text {{ parent.$t("about.seventhText") }}
 
-      h4(data-animation='fade-up').about__title.about__title_small.title Опыт работы
+      h4(data-animation='fade-up').about__title.about__title_small.title {{parent.$t("about.experience")}}
       .about__desc(data-animation='fade-up')
         .about__info
-          span.about__degree Фронтенд-разработчик
+          span.about__degree {{parent.$t("about.post")}}
           time.about__date 2018-2020
         p.about__place
-          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
+          a.about__link(href='http://ggpa.ru/', target='_blank', rel='noopener noreferrer')
             | Ginger Grandpa
       .about__desc(data-animation='fade-up')
         .about__info
-          span.about__degree Фронтенд-разработчик
-          time.about__date 2020 - настоящее время
+          span.about__degree {{parent.$t("about.post")}}
+          time.about__date 2020 - {{parent.$t("about.nowadays")}}
         p.about__place
-          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
-            | Яндекс
+          a.about__link(href='https://yandexlyceum.ru/', target='_blank', rel='noopener noreferrer')
+            | {{parent.$t("about.ya")}}
 
       h4(data-animation='fade-up').about__title.about__title_small.title {{ parent.$t("about.titleSecond") }}
       .about__desc(data-animation='fade-up')
@@ -43,40 +42,40 @@
           span.about__degree {{ parent.$t("about.degree") }}
           time.about__date 2014-2018
         p.about__place
-          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
+          a.about__link(href='http://www.ggtu.ru/', target='_blank', rel='noopener noreferrer')
             | {{ parent.$t("about.place") }}
       .about__desc(data-animation='fade-up')
         .about__info
-          span.about__degree Школа разработки интерфейсов
+          span.about__degree {{ parent.$t("about.shri") }}
           time.about__date 2019
         p.about__place
-          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
-            | Яндекс
+          a.about__link(href='https://yandex.ru/promo/academy/shri', target='_blank', rel='noopener noreferrer')
+            | {{parent.$t("about.ya")}}
 
-      h4(data-animation='fade-up').about__title.about__title_small.title Открытые проекты
+      h4(data-animation='fade-up').about__title.about__title_small.title {{parent.$t("about.opensource")}}
       .about__desc(data-animation='fade-up')
         .about__info
           span.about__degree posthtml-link-noreferrer
           time.about__date 2019
         p.about__place
-          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
-            | Пакет плагин для PostHTML
+          a.about__link(href='https://github.com/webistomin/posthtml-link-noreferrer', target='_blank', rel='noopener noreferrer')
+            | {{parent.$t("about.project-noref")}}
 
       .about__desc(data-animation='fade-up')
         .about__info
           span.about__degree posthtml-link-lazyload
           time.about__date 2019
         p.about__place
-          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
-            | Пакет плагин для PostHTML
+          a.about__link(href='https://github.com/webistomin/posthtml-lazyload', target='_blank', rel='noopener noreferrer')
+            | {{parent.$t("about.project-lazy")}}
 
       .about__desc(data-animation='fade-up')
         .about__info
           span.about__degree vue-testing-handbook
           time.about__date 2019
         p.about__place
-          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
-            | Перевод книги по тестированию Vue-приложений на русский язык
+          a.about__link(href='https://lmiller1990.github.io/vue-testing-handbook/ru/', target='_blank', rel='noopener noreferrer')
+            | {{parent.$t("about.project-book")}}
 </template>
 
 <script>

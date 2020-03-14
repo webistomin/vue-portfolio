@@ -6,7 +6,7 @@
     ul.main-nav__list
       li(v-if='!isMainPage' :class='{"main-nav__item_blue" : !isMainPage}').main-nav__item
         nuxt-link.main-nav__link(to='/' :class='{"main-nav__link_white" : !isMainPage}')
-          | Главная
+          | {{ $t('mainNav.fourthLink') }}
       li(v-else :class='{"main-nav__item_blue" : !isMainPage}').main-nav__item
         a.main-nav__link(
           @click='scrollToElement($event, "#about")'

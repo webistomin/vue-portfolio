@@ -3,7 +3,7 @@
     .container.page-footer__container
       AppContacts(data-animation='fade-up')
       .page-footer__copyright
-        p.page-footer__copyright-text {{ $t('pageFooter.copyright') }}
+        p.page-footer__copyright-text ©{{new Date().getUTCFullYear()}} {{ $t('pageFooter.copyright') }}
 </template>
 
 <script>

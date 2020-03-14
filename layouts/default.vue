@@ -20,6 +20,9 @@
   export default {
     components: { AppFooter, AppHeader },
     mounted() {
+      // eslint-disable-next-line no-console
+      console.log('%c%s', 'color: green; font-size: 24px;', 'Рад, что тебе интересно 💚');
+
       // Global vh
 
       let lastHeight = window.innerHeight;
@@ -190,7 +193,7 @@
 
       // Overlay
       this.$router.beforeEach((to, from, next) => {
-        if (to.path === from.path) {
+        if (to.path === from.path || to.name === from.name) {
           next();
           // eslint-disable-next-line no-useless-return
           return;
@@ -218,6 +221,17 @@
           cursor.setupEventListeners();
         });
       });
+    },
+    head() {
+      return {
+        meta: [
+          { hid: 'description', name: 'description', content: this.$t('meta.description') },
+          { hid: 'keywords', name: 'keywords', content: this.$t('meta.keywords') },
+        ],
+        htmlAttrs: {
+          lang: this.$i18n.locale,
+        },
+      };
     },
   };
 </script>

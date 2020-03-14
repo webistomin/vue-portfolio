@@ -5,8 +5,8 @@
 
 <script>
   import sal from 'sal.js';
-  import AppPortfolio from '@/components/ui/AppPortfolio/AppPortfolio';
   import AppContent from '@/components/partials/AppContent/AppContent';
+  import AppPortfolio from '@/components/ui/AppPortfolio/AppPortfolio';
 
   export default {
     name: 'Portfolio',

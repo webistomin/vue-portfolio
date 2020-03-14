@@ -18,7 +18,7 @@
     },
     head() {
       return {
-        title: 'Алексей Истомин :: Фронтенд разработчик',
+        title: this.$t('meta.homeTitle'),
       };
     },
   };
