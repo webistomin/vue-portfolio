@@ -26,14 +26,14 @@
           span.about__degree {{parent.$t("about.post")}}
           time.about__date 2018-2020
         p.about__place
-          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
+          a.about__link(href='http://ggpa.ru/', target='_blank', rel='noopener noreferrer')
             | Ginger Grandpa
       .about__desc(data-animation='fade-up')
         .about__info
           span.about__degree {{parent.$t("about.post")}}
           time.about__date 2020 - {{parent.$t("about.nowadays")}}
         p.about__place
-          a.about__link(href='http://eng.ggtu.ru/', target='_blank', rel='noopener noreferrer')
+          a.about__link(href='https://yandexlyceum.ru/', target='_blank', rel='noopener noreferrer')
             | {{parent.$t("about.ya")}}
 
       h4(data-animation='fade-up').about__title.about__title_small.title {{ parent.$t("about.titleSecond") }}
