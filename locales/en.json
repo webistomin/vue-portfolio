@@ -36,7 +36,10 @@
     "opensource": "Open source",
     "project-noref": "PostHTML plugin for creating secure links to third-party sites",
     "project-lazy": "PostHTML plugin for lazy image loading using native technologies",
-    "project-book": "Translation of a book on testing Vue applications into Russian"
+    "project-book": "Translation of a book on testing Vue applications into Russian",
+    "project-nano": "An easy-to-use and simple Instagram package that allow you to fetch media content without API and access token",
+    "looking": "Looking for a good job",
+    "contact-me": "Hire me"
   },
   "portfolio": {
     "title": "Portfolio",

@@ -31,10 +31,15 @@
       .about__desc(data-animation='fade-up')
         .about__info
           span.about__degree {{parent.$t("about.post")}}
-          time.about__date 2020 - {{parent.$t("about.nowadays")}}
+          time.about__date 2020 - 2020
         p.about__place
           a.about__link(href='https://yandexlyceum.ru/', target='_blank', rel='noopener noreferrer')
             | {{parent.$t("about.ya")}}
+      .about__desc(data-animation='fade-up')
+        .about__info
+          span.about__degree {{parent.$t("about.looking")}} 😇
+        p.about__place
+          a(href='#contacts' v-scroll-to="{ el: '#contacts', duration: 1000, }").about__link {{parent.$t("about.contact-me")}}
 
       h4(data-animation='fade-up').about__title.about__title_small.title {{ parent.$t("about.titleSecond") }}
       .about__desc(data-animation='fade-up')
@@ -76,6 +81,14 @@
         p.about__place
           a.about__link(href='https://lmiller1990.github.io/vue-testing-handbook/ru/', target='_blank', rel='noopener noreferrer')
             | {{parent.$t("about.project-book")}}
+
+      .about__desc(data-animation='fade-up')
+        .about__info
+          span.about__degree nanogram.js
+          time.about__date 2020
+        p.about__place
+          a.about__link(href='https://github.com/webistomin/nanogram.js', target='_blank', rel='noopener noreferrer')
+            | {{parent.$t("about.project-nano")}}
 </template>
 
 <script>
