@@ -43,6 +43,15 @@
         default: false,
       },
     },
+    methods: {
+      scrollToElement(e, el) {
+        e.preventDefault();
+        this.$scrollTo(el, 1000, {
+          easing: [0.215, 0.61, 0.355, 1],
+          offset: -80,
+        });
+      },
+    },
   };
 </script>
 
