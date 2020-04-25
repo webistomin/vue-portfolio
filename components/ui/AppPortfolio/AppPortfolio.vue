@@ -317,6 +317,32 @@
             source: '',
           },
           {
+            title: 'Sociaro',
+            images: {
+              jpg: {
+                mobile: '/img/portfolio/sociaro-mobile.jpg',
+                tablet: '/img/portfolio/sociaro-tablet.jpg',
+                desktop: '/img/portfolio/sociaro-desktop.jpg',
+              },
+              jpg2x: {
+                mobile: '/img/portfolio/sociaro-mobile.jpg',
+                tablet: '/img/portfolio/sociaro-tablet@2x.jpg',
+                desktop: '/img/portfolio/sociaro-desktop@2x.jpg',
+              },
+              webp: {
+                mobile: '/img/portfolio/sociaro-mobile.webp',
+                tablet: '/img/portfolio/sociaro-tablet.webp',
+                desktop: '/img/portfolio/sociaro-desktop.webp',
+              },
+              webp2x: {
+                mobile: '/img/portfolio/sociaro-mobile.webp',
+                tablet: '/img/portfolio/sociaro-tablet@2x.webp',
+                desktop: '/img/portfolio/sociaro-desktop@2x.webp',
+              },
+            },
+            demo: 'http://www.sociaro.com/',
+          },
+          {
             title: 'Champ',
             images: {
               jpg: {
