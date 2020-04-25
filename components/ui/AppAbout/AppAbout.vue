@@ -23,6 +23,13 @@
       h4(data-animation='fade-up').about__title.about__title_small.title {{parent.$t("about.experience")}}
       .about__desc(data-animation='fade-up')
         .about__info
+          span.about__degree {{parent.$t("about.post-markup")}} ({{parent.$t("about.practise")}})
+          time.about__date 2017-2017
+        p.about__place
+          a.about__link(href='http://afalab.ru/', target='_blank', rel='noopener noreferrer')
+            | Afalab
+      .about__desc(data-animation='fade-up')
+        .about__info
           span.about__degree {{parent.$t("about.post")}}
           time.about__date 2018-2020
         p.about__place
