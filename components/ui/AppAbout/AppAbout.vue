@@ -23,7 +23,7 @@
       h4(data-animation='fade-up').about__title.about__title_small.title {{parent.$t("about.experience")}}
       .about__desc(data-animation='fade-up')
         .about__info
-          span.about__degree {{parent.$t("about.post-markup")}} ({{parent.$t("about.practise")}})
+          span.about__degree {{parent.$t("about.post-markup")}}
           time.about__date 2017-2017
         p.about__place
           a.about__link(href='http://afalab.ru/', target='_blank', rel='noopener noreferrer')
@@ -96,6 +96,14 @@
         p.about__place
           a.about__link(href='https://github.com/webistomin/nanogram.js', target='_blank', rel='noopener noreferrer')
             | {{parent.$t("about.project-nano")}}
+
+      .about__desc(data-animation='fade-up')
+        .about__info
+          span.about__degree favoritos
+          time.about__date 2020
+        p.about__place
+          a.about__link(href='https://github.com/webistomin/favoritos', target='_blank', rel='noopener noreferrer')
+            | {{parent.$t("about.project-favoritos")}}
 </template>
 
 <script>

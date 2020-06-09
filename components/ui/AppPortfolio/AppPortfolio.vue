@@ -209,6 +209,33 @@
             source: '',
           },
           {
+            title: 'Velocity',
+            images: {
+              jpg: {
+                mobile: '/img/portfolio/velocity-mobile.jpg',
+                tablet: '/img/portfolio/velocity-tablet.jpg',
+                desktop: '/img/portfolio/velocity-desktop.jpg',
+              },
+              jpg2x: {
+                mobile: '/img/portfolio/velocity-mobile@2x.jpg',
+                tablet: '/img/portfolio/velocity-tablet@2x.jpg',
+                desktop: '/img/portfolio/velocity-desktop@2x.jpg',
+              },
+              webp: {
+                mobile: '/img/portfolio/velocity-mobile.webp',
+                tablet: '/img/portfolio/velocity-tablet.webp',
+                desktop: '/img/portfolio/velocity-desktop.webp',
+              },
+              webp2x: {
+                mobile: '/img/portfolio/velocity-mobile@2x.webp',
+                tablet: '/img/portfolio/velocity-tablet@2x.webp',
+                desktop: '/img/portfolio/velocity-desktop@2x.webp',
+              },
+            },
+            demo: 'https://stormy-ocean-88138.herokuapp.com/',
+            source: 'https://github.com/webistomin/velocity-dashboard',
+          },
+          {
             title: 'Lethendy',
             images: {
               jpg: {

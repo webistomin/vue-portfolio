@@ -21,10 +21,31 @@
     components: { AppFooter, AppHeader },
     mounted() {
       // eslint-disable-next-line no-console
-      console.log('%c%s', 'color: green; font-size: 24px;', 'Рад, что тебе интересно 💚');
+      console.log(
+        '%c%s',
+        'color: green; font-size: 12px;',
+        'Ребята, не стоит вскрывать эту тему. Вы молодые, шутливые, вам все легко. Это не то. Это не Чикатило и даже не архивы спецслужб. Сюда лучше не лезть. Серьезно, любой из вас будет жалеть. Лучше закройте тему и забудьте, что тут писалось. Я вполне понимаю, что данным сообщением вызову дополнительный интерес, но хочу сразу предостеречь пытливых - стоп. Остальные просто не найдут.'
+      );
+
+      const body = document.body;
+      let timer = null;
+
+      window.addEventListener(
+        'scroll',
+        function() {
+          clearTimeout(timer);
+          if (!body.classList.contains('disable-hover')) {
+            body.classList.add('disable-hover');
+          }
+
+          timer = setTimeout(function() {
+            body.classList.remove('disable-hover');
+          }, 150);
+        },
+        false
+      );
 
       // Global vh
-
       let lastHeight = window.innerHeight;
       let vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
