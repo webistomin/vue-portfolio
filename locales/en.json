@@ -64,5 +64,8 @@
     "thirdLabel": "Your message",
     "btn": "Send",
     "copyright": "Alexey Istomin – frontend developer based in Moscow, Russia."
+  },
+  "error": {
+    "home": "Home page"
   }
 }

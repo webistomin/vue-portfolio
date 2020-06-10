@@ -1,0 +1,20 @@
++b('app-error')
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  height: 100vh
+
+  @supports (height: calc(var(--vh) * 100))
+    height: calc(var(--vh) * 100)
+
+  +e('title')
+    &.title
+      font-size: 25vw
+
+  +e('link')
+    font-size: 2vw
+    text-decoration: underline
+
+    &:hover
+      text-decoration: none
