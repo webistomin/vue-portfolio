@@ -31,7 +31,11 @@
         span.page-header__line
         span.page-header__line
         span.page-header__line
-      AppNav(:isNavOpened='isOpened' :isMainPage='isMainPage')
+      AppNav(
+        :isNavOpened='isOpened'
+        :isMainPage='isMainPage'
+        @closeNav='closeMenu'
+        )
       AppSocials(
         :isSquared='true'
         :socials='socials'
@@ -75,6 +79,9 @@
     methods: {
       openMenu() {
         this.isOpened = !this.isOpened;
+      },
+      closeMenu() {
+        this.isOpened = false;
       },
     },
   };

@@ -46,8 +46,9 @@
     methods: {
       scrollToElement(e, el) {
         e.preventDefault();
+        this.$emit('closeNav');
         this.$scrollTo(el, 1000, {
-          easing: [0.215, 0.61, 0.355, 1],
+          easing: [0.785, 0.135, 0.15, 0.86],
           offset: -80,
         });
       },
