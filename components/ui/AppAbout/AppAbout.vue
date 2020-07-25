@@ -44,9 +44,10 @@
             | {{parent.$t("about.ya")}}
       .about__desc(data-animation='fade-up')
         .about__info
-          span.about__degree {{parent.$t("about.looking")}} 😇
+          span.about__degree {{parent.$t("about.post")}}
+          time.about__date 2020 - {{parent.$t("about.nowadays")}}
         p.about__place
-          a(href='#contacts' v-scroll-to="{ el: '#contacts', duration: 1000, }").about__link {{parent.$t("about.contact-me")}}
+          a(href='https://www.svyaznoy.ru/' target='_blank', rel='noopener noreferrer').about__link {{parent.$t("about.svyaznoy")}}
 
       h4(data-animation='fade-up').about__title.about__title_small.title {{ parent.$t("about.titleSecond") }}
       .about__desc(data-animation='fade-up')

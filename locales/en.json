@@ -34,15 +34,14 @@
     "practise": "Practise",
     "nowadays": "nowadays",
     "ya": "Yandex",
+    "svyaznoy": "Svyaznoy",
     "shri": "Interface Development School",
     "opensource": "Open source",
     "project-noref": "PostHTML plugin for creating secure links to third-party sites",
     "project-lazy": "PostHTML plugin for lazy image loading using native technologies",
     "project-book": "Translation of a book for testing Vue applications into Russian",
     "project-nano": "An easy-to-use and simple Instagram package that allow you to fetch media content without API and access token",
-    "project-favoritos": "Favoritos is a JavaScript plugin that adds some HTML5 canvas magic to your favicon. With just a wee bit of code, we can make some really cool effects.",
-    "looking": "Looking for a good job",
-    "contact-me": "Hire me"
+    "project-favoritos": "Favoritos is a JavaScript plugin that adds some HTML5 canvas magic to your favicon. With just a wee bit of code, we can make some really cool effects."
   },
   "portfolio": {
     "title": "Portfolio",
